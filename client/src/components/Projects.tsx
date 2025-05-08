@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { useProjects } from "@/hooks/use-projects";
 
 const Projects = () => {
   const { projects } = useProjects();
-  const [activeProject, setActiveProject] = useState("project1");
+  const [activeProject, setActiveProject] = useState(projects[0]?.id || "");
+
+  // Set initial active project when projects load
+  useEffect(() => {
+    if (projects.length > 0 && !activeProject) {
+      setActiveProject(projects[0].id);
+    }
+  }, [projects, activeProject]);
 
   const handleProjectChange = (projectId: string) => {
     setActiveProject(projectId);
@@ -30,9 +37,9 @@ const Projects = () => {
             <button
               key={project.id}
               onClick={() => handleProjectChange(project.id)}
-              className={`project-nav-link ${activeProject === project.id ? 'active' : ''}`}
+              className={`project-nav-link ${activeProject === project.id ? 'active' : ''} mx-2 px-4 py-2 rounded-full font-medium transition-colors`}
             >
-              {project.title.split(":")[0]}
+              {project.title.split(" - ")[0]}
             </button>
           ))}
         </div>

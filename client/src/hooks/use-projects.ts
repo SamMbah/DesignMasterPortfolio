@@ -5,7 +5,7 @@ import { Project as OldProject, projectsData as oldProjectsData } from "@/data/p
 type CombinedProject = OldProject | NewProject;
 
 export const useProjects = () => {
-  // Give priority to new project data with interactive prototypes
+  // Use the new project data that includes interactive prototypes
   const [projects] = useState<CombinedProject[]>(newProjectsData);
 
   return {

@@ -50,842 +50,691 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "project1",
-    title: "ZenPay: Digital Banking App Redesign",
-    focus: "UX Research Focus",
-    challenge: "Redesigning Zenith Bank's digital banking platform to improve user satisfaction, reduce drop-off rates during transactions, and increase feature adoption among users aged 45+.",
-    role: "Lead UX Researcher and Designer working across multiple teams including product, development, and marketing.",
-    timeline: "6 months (January 2022 - June 2022)",
+    id: "healthtrack",
+    title: "HealthTrack - Medical Appointment Platform",
+    focus: "UX Research & UI Design",
+    challenge: "Design a user-friendly application that simplifies the process of finding doctors and scheduling medical appointments, reducing the friction and anxiety associated with healthcare access.",
+    role: "Lead UX Designer",
+    timeline: "8 weeks",
     research: {
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500",
       methods: [
-        "User interviews with 24 customers across different demographics",
-        "Usability testing sessions with 16 participants",
-        "Customer journey mapping workshops with internal stakeholders",
-        "Analytics review of drop-off points in the transaction flow",
-        "Competitive analysis of 6 banking applications"
+        "User interviews with 25 patients across different demographics",
+        "Competitive analysis of 5 existing healthcare platforms",
+        "Card sorting sessions to determine information hierarchy",
+        "Usability testing with wireframes"
       ],
       findings: [
-        "Users over 45 struggled with complex navigation and technical terminology",
-        "Transaction confirmation screens lacked clarity, causing anxiety and repeated actions",
-        "Users had difficulty locating frequently used features",
-        "Authentication process was perceived as cumbersome with too many steps",
-        "Mobile performance issues on older devices led to transaction abandonment"
+        "Users found existing healthcare platforms confusing and overwhelming",
+        "Doctor ratings and reviews were the most important factor in decision-making",
+        "Users wanted clear visibility into doctor availability before starting the booking process",
+        "The ability to filter by insurance acceptance was critical for US-based participants"
       ]
     },
     design: {
-      images: [
-        {
-          title: "User Journey Map",
-          src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500"
-        },
-        {
-          title: "Wireframes",
-          src: "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500"
-        },
-        {
-          title: "Usability Testing",
-          src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500"
-        }
-      ],
       decisions: [
         {
-          title: "Simplified navigation",
-          description: "Reduced menu depth and implemented a customizable quick-access dashboard"
+          title: "Minimalist UI with Clear Visual Hierarchy",
+          description: "Used a clean interface with generous whitespace to reduce cognitive load. Important information like doctor specialties and availability was given visual prominence."
         },
         {
-          title: "Transaction clarity",
-          description: "Redesigned transaction flows with explicit confirmation steps and status indicators"
+          title: "Two-Step Appointment Booking",
+          description: "Reduced the traditional multi-step booking process to just two screens - doctor selection and appointment confirmation - to minimize user drop-off."
         },
         {
-          title: "Personalized experience",
-          description: "Created user-specific views and simplified language based on user profiles"
+          title: "Hybrid Navigation System",
+          description: "Implemented a combination of tab navigation and card-based content to create an intuitive flow that caters to both novice and experienced users."
         },
         {
-          title: "Streamlined authentication",
-          description: "Introduced biometric options and remembered devices functionality"
-        }
-      ],
-      finalDesigns: [
-        {
-          title: "Dashboard - Web",
-          src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-        },
-        {
-          title: "Mobile App Experience",
-          src: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
+          title: "Accessibility-First Color System",
+          description: "Designed with high contrast ratios and added visual indicators beyond color to ensure the platform is usable by people with visual impairments."
         }
       ]
     },
     outcomes: [
       {
-        value: "30%",
-        label: "Increase in user satisfaction scores"
+        value: "93%",
+        label: "Usability test success rate"
       },
       {
-        value: "42%",
-        label: "Reduction in transaction abandonment"
+        value: "87%",
+        label: "of users found the booking process easier than competitors"
       },
       {
-        value: "28%",
-        label: "Increase in feature adoption among users 45+"
+        value: "41%",
+        label: "reduction in time to complete an appointment booking"
+      },
+      {
+        value: "4.8/5",
+        label: "average user satisfaction rating"
       }
     ],
-    tools: [
-      "Figma", "User Interviews", "Usability Testing", "Journey Mapping", 
-      "Google Analytics", "Miro", "Maze", "Optimal Workshop"
-    ],
-    interactivePrototype: {
-      defaultScreen: "dashboard",
-      webScreens: [
-        {
-          id: "dashboard",
-          title: "Dashboard",
-          description: "The redesigned dashboard features a customizable widget system with the most frequently used functions displayed prominently.",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["transfer", "accounts", "profile"]
-        },
-        {
-          id: "transfer",
-          title: "Funds Transfer",
-          description: "Simplified transfer flow with clear indication of steps and progress.",
-          image: "https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["confirmation", "dashboard"]
-        },
-        {
-          id: "confirmation",
-          title: "Transfer Confirmation",
-          description: "Redesigned confirmation screen with clear success indicators and next action options.",
-          image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["dashboard", "accounts"]
-        },
-        {
-          id: "accounts",
-          title: "Accounts Overview",
-          description: "Consolidated view of all user accounts with quick-action capabilities.",
-          image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["transfer", "dashboard"]
-        },
-        {
-          id: "profile",
-          title: "User Profile",
-          description: "Simplified user profile with accessibility options and personalization settings.",
-          image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["dashboard", "accounts"]
-        }
-      ],
-      mobileScreens: [
-        {
-          id: "m-dashboard",
-          title: "Mobile Dashboard",
-          description: "Mobile-optimized dashboard with touch-friendly targets and essential functions.",
-          image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-transfer", "m-accounts", "m-profile"]
-        },
-        {
-          id: "m-transfer",
-          title: "Mobile Transfer",
-          description: "Streamlined mobile transfer process with large input fields and clear CTAs.",
-          image: "https://images.unsplash.com/photo-1616077167559-605dd8a9455e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-confirmation", "m-dashboard"]
-        },
-        {
-          id: "m-confirmation",
-          title: "Mobile Confirmation",
-          description: "Clear confirmation with haptic feedback and animation for successful transactions.",
-          image: "https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-dashboard", "m-accounts"]
-        },
-        {
-          id: "m-accounts",
-          title: "Mobile Accounts",
-          description: "Swipeable account cards with transaction history and quick actions.",
-          image: "https://images.unsplash.com/photo-1564427468650-47840a77528f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-transfer", "m-dashboard"]
-        },
-        {
-          id: "m-profile",
-          title: "Mobile Profile",
-          description: "Mobile profile with biometric settings and personalization options.",
-          image: "https://images.unsplash.com/photo-1573497019236-61f35a392084?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-dashboard", "m-accounts"]
-        }
-      ]
-    }
-  },
-  {
-    id: "project2",
-    title: "HealthTrack: Patient Monitoring Platform",
-    focus: "UX Design Focus",
-    challenge: "Designing an intuitive health monitoring platform that enables patients to track chronic conditions while providing healthcare providers with actionable insights for preventative care.",
-    role: "UX Designer leading the research and design process in collaboration with healthcare providers and technical teams.",
-    timeline: "5 months (August 2022 - December 2022)",
-    research: {
-      image: "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500",
-      methods: [
-        "Contextual inquiry with 10 patients managing chronic conditions",
-        "Interviews with 8 healthcare providers",
-        "Competitive analysis of health tracking applications",
-        "Co-design workshops with patients and medical professionals",
-        "Usability testing with low-fidelity prototypes"
-      ],
-      findings: [
-        "Patients struggled with consistency in data entry, leading to incomplete health records",
-        "Healthcare providers needed better data visualization to quickly identify trends",
-        "Privacy concerns affected willingness to share certain health metrics",
-        "Reminder systems were often ignored or turned off by users",
-        "Integration with existing medical systems was critical for provider adoption"
-      ]
-    },
-    design: {
-      images: [
-        {
-          title: "User Personas",
-          src: "https://images.unsplash.com/photo-1599508704512-2f19efd1e35f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500"
-        },
-        {
-          title: "Information Architecture",
-          src: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400"
-        }
-      ],
-      decisions: [
-        {
-          title: "Simplified data entry",
-          description: "Created one-tap tracking interfaces with smart defaults based on historical patterns"
-        },
-        {
-          title: "Contextual reminders",
-          description: "Developed an adaptive reminder system that learns from user behavior patterns"
-        },
-        {
-          title: "Visualized insights",
-          description: "Designed dynamic data visualizations showing correlations between different health metrics"
-        },
-        {
-          title: "Privacy controls",
-          description: "Implemented granular sharing controls giving patients ownership of their health data"
-        }
-      ],
-      finalDesigns: [
-        {
-          title: "Dashboard View",
-          src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-        },
-        {
-          title: "Mobile Experience",
-          src: "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
-        }
-      ]
-    },
-    outcomes: [
-      {
-        value: "86%",
-        label: "Increase in consistent tracking adherence"
-      },
-      {
-        value: "34%",
-        label: "Reduction in missed appointments"
-      },
-      {
-        value: "78%",
-        label: "Provider satisfaction with data insights"
-      }
-    ],
-    tools: [
-      "Figma", "Design System", "Usability Testing", "Prototyping",
-      "User Journey Mapping", "Information Architecture", "Miro"
-    ],
-    interactivePrototype: {
-      defaultScreen: "dashboard",
-      webScreens: [
-        {
-          id: "dashboard",
-          title: "Patient Dashboard",
-          description: "Personalized dashboard showing health metrics, upcoming appointments, and medication schedule at a glance.",
-          image: "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["metrics", "appointments", "medications"]
-        },
-        {
-          id: "metrics",
-          title: "Health Metrics",
-          description: "Intuitive visualization of health data with correlation analysis between different metrics.",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["trends", "dashboard"]
-        },
-        {
-          id: "trends",
-          title: "Health Trends Analysis",
-          description: "Long-term trend view with predictive insights based on historical health data.",
-          image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["metrics", "dashboard"]
-        },
-        {
-          id: "appointments",
-          title: "Appointment Management",
-          description: "Interactive calendar with appointment scheduling, reminders, and preparation instructions.",
-          image: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["dashboard", "metrics"]
-        },
-        {
-          id: "medications",
-          title: "Medication Tracking",
-          description: "Medication management with smart reminders, refill tracking, and side effect reporting.",
-          image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["dashboard", "appointments"]
-        }
-      ],
-      mobileScreens: [
-        {
-          id: "m-dashboard",
-          title: "Mobile Dashboard",
-          description: "Compact health dashboard optimized for quick daily check-ins on mobile devices.",
-          image: "https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-metrics", "m-appointments", "m-medications"]
-        },
-        {
-          id: "m-metrics",
-          title: "Mobile Health Metrics",
-          description: "Touch-optimized health tracking with one-tap data entry and immediate visual feedback.",
-          image: "https://images.unsplash.com/photo-1616077167559-605dd8a9455e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-trends", "m-dashboard"]
-        },
-        {
-          id: "m-trends",
-          title: "Mobile Health Trends",
-          description: "Mobile-optimized trend visualizations with pinch-to-zoom and time period selection.",
-          image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-metrics", "m-dashboard"]
-        },
-        {
-          id: "m-appointments",
-          title: "Mobile Appointments",
-          description: "Appointment management with calendar integration and location-based reminders.",
-          image: "https://images.unsplash.com/photo-1564427468650-47840a77528f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-dashboard", "m-metrics"]
-        },
-        {
-          id: "m-medications",
-          title: "Mobile Medications",
-          description: "Medication tracking with barcode scanning, dose scheduling, and smart notifications.",
-          image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-dashboard", "m-appointments"]
-        }
-      ]
-    }
-  },
-  {
-    id: "project3",
-    title: "EcoShop: Sustainable E-commerce Platform",
-    focus: "UI Design Focus",
-    challenge: "Creating a visually appealing e-commerce platform focused on sustainable products while effectively communicating eco-credentials and impact metrics to environmentally conscious consumers.",
-    role: "UI Designer working with UX team, sustainability experts, and e-commerce specialists.",
-    timeline: "4 months (February 2023 - May 2023)",
-    research: {
-      methods: [
-        "Visual competitive analysis of sustainable e-commerce platforms",
-        "User preference testing with eco-conscious consumers",
-        "Card sorting for product categorization",
-        "A/B testing of different visual sustainability indicators",
-        "Stakeholder interviews on brand identity and eco-values"
-      ],
-      findings: [
-        "Users struggled to verify the authenticity of sustainability claims",
-        "Product comparison tools lacked environmental impact information",
-        "Visual indicators of sustainability varied widely and caused confusion",
-        "Users wanted transparency about product sourcing and supply chain",
-        "Eco-conscious shoppers responded well to impact visualization"
-      ]
-    },
-    design: {
-      images: [
-        {
-          title: "Visual Design System",
-          src: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400"
-        }
-      ],
-      decisions: [
-        {
-          title: "Unified eco-credentials system",
-          description: "Created standardized visual indicators for different types of sustainability certifications"
-        },
-        {
-          title: "Impact visualization",
-          description: "Developed interactive elements showing the environmental impact of purchases"
-        },
-        {
-          title: "Nature-inspired color system",
-          description: "Implemented a biophilic color palette that maintains WCAG AA+ compliance"
-        },
-        {
-          title: "Supply chain transparency",
-          description: "Designed visual journey maps showing product origins and manufacturing processes"
-        }
-      ],
-      finalDesigns: [
-        {
-          title: "Product Listing Page",
-          src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-        },
-        {
-          title: "Mobile Shopping Experience",
-          src: "https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
-        }
-      ]
-    },
-    outcomes: [
-      {
-        value: "42%",
-        label: "Increase in average order value"
-      },
-      {
-        value: "68%",
-        label: "Users reported high trust in sustainability claims"
-      },
-      {
-        value: "37%",
-        label: "Increase in returning customers"
-      }
-    ],
-    tools: [
-      "Figma", "Design System", "Visual Design", "Color Theory", 
-      "Typography", "Component Library", "A/B Testing"
-    ],
+    tools: ["Figma", "Maze", "Optimal Workshop", "Adobe Illustrator"],
     interactivePrototype: {
       defaultScreen: "home",
       webScreens: [
         {
           id: "home",
-          title: "EcoShop Homepage",
-          description: "Homepage showcasing featured sustainable products with impact metrics prominently displayed.",
-          image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["category", "product", "impact"]
+          title: "Home Dashboard",
+          description: "Main dashboard with quick access to all features",
+          image: "/images/healthtrack-web-home.png",
+          linkTo: ["search", "doctor"]
         },
         {
-          id: "category",
-          title: "Product Category",
-          description: "Category view with sustainability filters and eco-certification badges on product cards.",
-          image: "https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["product", "home"]
+          id: "search",
+          title: "Doctor Search",
+          description: "Find and filter doctors based on specialty, location, and availability",
+          image: "/images/healthtrack-web-search.png",
+          linkTo: ["home", "doctor"]
+        },
+        {
+          id: "doctor",
+          title: "Doctor Profile",
+          description: "Detailed information about the doctor including experience, ratings, and reviews",
+          image: "/images/healthtrack-web-doctor.png",
+          linkTo: ["home", "search", "appointment"]
+        },
+        {
+          id: "appointment",
+          title: "Appointment Booking",
+          description: "Select date, time, and reason for appointment",
+          image: "/images/healthtrack-web-appointment.png",
+          linkTo: ["doctor", "confirmed"]
+        },
+        {
+          id: "confirmed",
+          title: "Confirmation",
+          description: "Appointment confirmation with details and next steps",
+          image: "/images/healthtrack-web-confirmed.png",
+          linkTo: ["home"]
+        }
+      ],
+      mobileScreens: [
+        {
+          id: "home",
+          title: "Home",
+          description: "Main dashboard with upcoming appointments and quick actions",
+          image: "/images/healthtrack-mobile-home.png",
+          linkTo: ["search"]
+        },
+        {
+          id: "search",
+          title: "Find Doctor",
+          description: "Search and browse available doctors",
+          image: "/images/healthtrack-mobile-search.png",
+          linkTo: ["home", "doctor"]
+        },
+        {
+          id: "doctor",
+          title: "Doctor Profile",
+          description: "View doctor info and available time slots",
+          image: "/images/healthtrack-mobile-doctor.png",
+          linkTo: ["search", "appointment"]
+        },
+        {
+          id: "appointment",
+          title: "Book Appointment",
+          description: "Enter appointment details",
+          image: "/images/healthtrack-mobile-appointment.png",
+          linkTo: ["doctor", "confirmed"]
+        },
+        {
+          id: "confirmed",
+          title: "Confirmation",
+          description: "Booking confirmation and details",
+          image: "/images/healthtrack-mobile-confirmed.png",
+          linkTo: ["home"]
+        }
+      ]
+    }
+  },
+  {
+    id: "zenpay",
+    title: "ZenPay - Digital Banking Experience",
+    focus: "Product Design & UI Development",
+    challenge: "Redesign a traditional banking application to create a modern, intuitive digital banking experience that makes financial management less stressful and more accessible to users of all ages.",
+    role: "Senior Product Designer",
+    timeline: "12 weeks",
+    research: {
+      methods: [
+        "Quantitative analysis of user behavior in existing banking app",
+        "User interviews with 35 participants across different age groups",
+        "Contextual inquiry observing how users interact with banking apps",
+        "A/B testing of different navigation patterns"
+      ],
+      findings: [
+        "Older users (55+) struggled with dense information architecture in existing banking apps",
+        "83% of users wanted faster access to their balance and recent transactions",
+        "Security concerns were the primary source of anxiety when using mobile banking",
+        "Users preferred simple terminology over banking jargon"
+      ]
+    },
+    design: {
+      decisions: [
+        {
+          title: "Simplified Information Architecture",
+          description: "Reduced navigation depth and reorganized features based on frequency of use rather than traditional banking categories."
+        },
+        {
+          title: "Prominent Security Features",
+          description: "Made security controls more visible and accessible to help build user trust and confidence."
+        },
+        {
+          title: "Progressive Disclosure",
+          description: "Implemented a layered approach to information, showing essential data first with options to view more details as needed."
+        },
+        {
+          title: "Visual Transaction History",
+          description: "Redesigned transaction history with visual cues and categorization to help users understand their spending patterns at a glance."
+        }
+      ]
+    },
+    outcomes: [
+      {
+        value: "65%",
+        label: "increase in daily active users"
+      },
+      {
+        value: "42%",
+        label: "reduction in customer support calls"
+      },
+      {
+        value: "89%",
+        label: "of users reported feeling more confident managing their finances"
+      },
+      {
+        value: "4.7/5",
+        label: "App Store rating (up from 3.2/5)"
+      }
+    ],
+    tools: ["Figma", "Principle", "Amplitude", "UserTesting"],
+    interactivePrototype: {
+      defaultScreen: "home",
+      webScreens: [
+        {
+          id: "home",
+          title: "Dashboard",
+          description: "Account overview with quick actions and spending insights",
+          image: "/images/zenpay-web-home.png",
+          linkTo: ["transfer", "accounts", "history"]
+        },
+        {
+          id: "transfer",
+          title: "Money Transfer",
+          description: "Send money to accounts and contacts",
+          image: "/images/zenpay-web-transfer.png",
+          linkTo: ["home", "confirmation"]
+        },
+        {
+          id: "confirmation",
+          title: "Transfer Confirmation",
+          description: "Verify and confirm transaction details",
+          image: "/images/zenpay-web-confirmation.png",
+          linkTo: ["transfer", "home"]
+        },
+        {
+          id: "accounts",
+          title: "My Accounts",
+          description: "Manage accounts and cards",
+          image: "/images/zenpay-web-accounts.png",
+          linkTo: ["home"]
+        },
+        {
+          id: "history",
+          title: "Transaction History",
+          description: "View and filter past transactions",
+          image: "/images/zenpay-web-history.png",
+          linkTo: ["home"]
+        }
+      ],
+      mobileScreens: [
+        {
+          id: "home",
+          title: "Home",
+          description: "Account overview with balances and recent transactions",
+          image: "/images/zenpay-mobile-home.png",
+          linkTo: ["transfer", "accounts", "history"]
+        },
+        {
+          id: "transfer",
+          title: "Send Money",
+          description: "Transfer funds to other accounts",
+          image: "/images/zenpay-mobile-transfer.png",
+          linkTo: ["home", "confirmation"]
+        },
+        {
+          id: "confirmation",
+          title: "Confirm Transfer",
+          description: "Review and authorize transaction",
+          image: "/images/zenpay-mobile-confirmation.png",
+          linkTo: ["transfer", "home"]
+        },
+        {
+          id: "accounts",
+          title: "Accounts & Cards",
+          description: "Manage financial accounts",
+          image: "/images/zenpay-mobile-accounts.png",
+          linkTo: ["home"]
+        },
+        {
+          id: "history",
+          title: "History",
+          description: "Transaction history and spending analytics",
+          image: "/images/zenpay-mobile-history.png",
+          linkTo: ["home"]
+        }
+      ]
+    }
+  },
+  {
+    id: "ecoshop",
+    title: "EcoShop - Sustainable E-commerce Platform",
+    focus: "UX Research & Service Design",
+    challenge: "Create an e-commerce experience that promotes sustainable products while making it easy for consumers to understand the environmental impact of their purchases.",
+    role: "UX Researcher & Designer",
+    timeline: "10 weeks",
+    research: {
+      methods: [
+        "Survey of 500+ consumers on shopping habits and sustainability concerns",
+        "Competitive analysis of existing eco-friendly marketplaces",
+        "User journey mapping for different customer segments",
+        "Prototype testing with 20 participants"
+      ],
+      findings: [
+        "72% of users were confused by vague sustainability claims on products",
+        "Price perception was the biggest barrier to purchasing sustainable products",
+        "Users wanted transparent information about product origins and materials",
+        "Social proof (reviews from other environmentally-conscious consumers) significantly influenced purchase decisions"
+      ]
+    },
+    design: {
+      decisions: [
+        {
+          title: "Standardized Sustainability Metrics",
+          description: "Developed a clear visual system for communicating environmental impact across carbon footprint, water usage, and ethical labor practices."
+        },
+        {
+          title: "Transparent Product Journey",
+          description: "Created interactive maps showing supply chain and manufacturing locations for each product to build trust and transparency."
+        },
+        {
+          title: "Impact Comparison Tool",
+          description: "Implemented a feature allowing users to compare the environmental impact of similar products to make more informed choices."
+        },
+        {
+          title: "Community Integration",
+          description: "Designed a social component where users could share sustainable living tips and product recommendations to build community around eco-conscious consumption."
+        }
+      ]
+    },
+    outcomes: [
+      {
+        value: "56%",
+        label: "increase in conversion rate for eco-friendly products"
+      },
+      {
+        value: "78%",
+        label: "of users reported better understanding of sustainability metrics"
+      },
+      {
+        value: "3.2x",
+        label: "increase in user-generated content about sustainable choices"
+      },
+      {
+        value: "26%",
+        label: "reduction in cart abandonment rate"
+      }
+    ],
+    tools: ["Figma", "Miro", "Hotjar", "UserZoom"],
+    interactivePrototype: {
+      defaultScreen: "home",
+      webScreens: [
+        {
+          id: "home",
+          title: "Homepage",
+          description: "Main landing page with featured sustainable products",
+          image: "/images/ecoshop-web-home.png",
+          linkTo: ["browse", "product"]
+        },
+        {
+          id: "browse",
+          title: "Browse Products",
+          description: "Category browsing with sustainability filters",
+          image: "/images/ecoshop-web-browse.png",
+          linkTo: ["home", "product"]
         },
         {
           id: "product",
-          title: "Product Detail",
-          description: "Detailed product view with transparent supply chain information and environmental impact data.",
-          image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["cart", "category", "home"]
+          title: "Product Details",
+          description: "Detailed product information with sustainability metrics",
+          image: "/images/ecoshop-web-product.png",
+          linkTo: ["home", "browse", "impact", "cart"]
+        },
+        {
+          id: "impact",
+          title: "Environmental Impact",
+          description: "Detailed breakdown of product's environmental footprint",
+          image: "/images/ecoshop-web-impact.png",
+          linkTo: ["product"]
         },
         {
           id: "cart",
           title: "Shopping Cart",
-          description: "Cart with cumulative environmental impact visualization and sustainable packaging options.",
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["checkout", "product"]
+          description: "Cart review with total environmental impact calculation",
+          image: "/images/ecoshop-web-cart.png",
+          linkTo: ["product", "checkout"]
+        }
+      ],
+      mobileScreens: [
+        {
+          id: "home",
+          title: "Home",
+          description: "Featured sustainable products and categories",
+          image: "/images/ecoshop-mobile-home.png",
+          linkTo: ["browse", "product"]
+        },
+        {
+          id: "browse",
+          title: "Browse",
+          description: "Browse sustainable products by category",
+          image: "/images/ecoshop-mobile-browse.png",
+          linkTo: ["home", "product"]
+        },
+        {
+          id: "product",
+          title: "Product",
+          description: "Product details with sustainability information",
+          image: "/images/ecoshop-mobile-product.png",
+          linkTo: ["home", "browse", "impact", "cart"]
         },
         {
           id: "impact",
-          title: "Impact Dashboard",
-          description: "Personal impact dashboard showing environmental benefits from past purchases.",
-          image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["home", "category"]
+          title: "Impact",
+          description: "Environmental impact details and supply chain transparency",
+          image: "/images/ecoshop-mobile-impact.png",
+          linkTo: ["product"]
         },
         {
-          id: "checkout",
-          title: "Eco-Friendly Checkout",
-          description: "Checkout process with carbon-offset options and sustainable delivery choices.",
-          image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["confirmation", "cart"]
-        },
-        {
-          id: "confirmation",
-          title: "Order Confirmation",
-          description: "Confirmation screen with environmental impact summary of the purchase.",
-          image: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["home", "impact"]
-        }
-      ],
-      mobileScreens: [
-        {
-          id: "m-home",
-          title: "Mobile Homepage",
-          description: "Mobile-optimized homepage with prominent sustainability messaging and featured products.",
-          image: "https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-category", "m-product", "m-impact"]
-        },
-        {
-          id: "m-category",
-          title: "Mobile Category View",
-          description: "Touch-friendly product category browsing with eco-filter quick toggles.",
-          image: "https://images.unsplash.com/photo-1616077167559-605dd8a9455e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-product", "m-home"]
-        },
-        {
-          id: "m-product",
-          title: "Mobile Product Detail",
-          description: "Swipeable product images with sticky eco-badges and expandable sustainability information.",
-          image: "https://images.unsplash.com/photo-1564466809058-bf4114d55352?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-cart", "m-category"]
-        },
-        {
-          id: "m-cart",
-          title: "Mobile Shopping Cart",
-          description: "Mobile cart with prominent impact metrics and easy checkout access.",
-          image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-checkout", "m-product"]
-        },
-        {
-          id: "m-impact",
-          title: "Mobile Impact View",
-          description: "Personal environmental impact tracker optimized for mobile viewing.",
-          image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-home", "m-category"]
-        },
-        {
-          id: "m-checkout",
-          title: "Mobile Checkout",
-          description: "Streamlined mobile checkout with eco-delivery options and carbon offsetting.",
-          image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-confirmation", "m-cart"]
-        },
-        {
-          id: "m-confirmation",
-          title: "Mobile Confirmation",
-          description: "Order confirmation with shareable environmental impact achievements.",
-          image: "https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-home", "m-impact"]
+          id: "cart",
+          title: "Cart",
+          description: "Review cart items and environmental impact",
+          image: "/images/ecoshop-mobile-cart.png",
+          linkTo: ["product", "checkout"]
         }
       ]
     }
   },
   {
-    id: "project4",
-    title: "LearnQuest: Educational Platform Redesign",
-    focus: "Design Thinking Focus",
-    challenge: "Reimagining an educational platform to improve engagement, knowledge retention, and course completion rates across diverse learning styles and accessibility needs.",
-    role: "UX/UI Designer applying design thinking methodology throughout the product development lifecycle.",
-    timeline: "7 months (July 2021 - January 2022)",
+    id: "learnquest",
+    title: "LearnQuest - Educational Platform for Kids",
+    focus: "UI Design & User Testing",
+    challenge: "Design an educational platform that makes learning engaging for children ages 6-12 while providing meaningful progress tracking for parents and teachers.",
+    role: "UI/UX Designer",
+    timeline: "14 weeks",
     research: {
-      image: "https://images.unsplash.com/photo-1427104227401-94b390b378b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500",
       methods: [
-        "Empathy interviews with 15 learners of different backgrounds",
-        "Diary studies tracking learning habits over 3 weeks",
-        "Co-creation workshops with educators and students",
-        "Prototype testing across different devices and contexts",
-        "Competitive analysis of educational platforms"
+        "Co-design sessions with elementary school teachers and education experts",
+        "Observation studies with children using existing educational apps",
+        "Parent interviews about monitoring children's educational progress",
+        "Prototype testing with 30 children and their parents"
       ],
       findings: [
-        "Learners struggled to maintain motivation without clear progress indicators",
-        "Different learning styles weren't accommodated in the existing platform",
-        "Mobile learning experience was significantly compromised",
-        "Social learning components were underutilized despite their effectiveness",
-        "Accessibility issues created barriers for many potential users"
+        "Children were most engaged when learning felt like play rather than structured lessons",
+        "Reading comprehension improved when children could choose topics they were interested in",
+        "Parents wanted detailed insights into strengths and areas for improvement",
+        "Teachers needed customization options to align content with their curriculum"
       ]
     },
     design: {
       decisions: [
         {
-          title: "Adaptive learning paths",
-          description: "Created personalized learning journeys based on learning style and pace"
+          title: "Age-Appropriate UI Elements",
+          description: "Designed interface elements with appropriate sizing, spacing, and interaction patterns based on children's motor skills and cognitive development at different ages."
         },
         {
-          title: "Progress visualization",
-          description: "Developed motivating progress indicators showing both completion and comprehension"
+          title: "Adaptive Learning Paths",
+          description: "Created a system that adjusts difficulty based on the child's performance to maintain an optimal challenge level without causing frustration."
         },
         {
-          title: "Multi-modal content delivery",
-          description: "Implemented options for visual, auditory, and interactive learning for each module"
+          title: "Dual Interface System",
+          description: "Developed separate but connected interfaces for children and adults, with the child's view focusing on fun and exploration while the parent/teacher view emphasized progress tracking and insights."
         },
         {
-          title: "Social learning components",
-          description: "Designed collaborative learning spaces with peer review and group challenges"
-        }
-      ],
-      finalDesigns: [
-        {
-          title: "Learning Dashboard",
-          src: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-        },
-        {
-          title: "Mobile Learning Experience",
-          src: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
+          title: "Reward-Based Progress System",
+          description: "Implemented a meaningful reward system that celebrated learning milestones without creating dependency on extrinsic motivation."
         }
       ]
     },
     outcomes: [
       {
-        value: "64%",
-        label: "Increase in course completion rates"
+        value: "82%",
+        label: "of children remained engaged for the entire session"
       },
       {
-        value: "87%",
-        label: "Users reported better knowledge retention"
+        value: "76%",
+        label: "of parents reported better insights into their child's learning"
       },
       {
-        value: "42%",
-        label: "Growth in daily active users"
+        value: "34%",
+        label: "improvement in subject matter retention"
+      },
+      {
+        value: "29",
+        label: "minutes average session length (vs. 18 min industry average)"
       }
     ],
-    tools: [
-      "Figma", "Miro", "Design Thinking", "Journey Mapping", 
-      "Workshop Facilitation", "Rapid Prototyping", "User Testing"
-    ],
+    tools: ["Figma", "Principle", "Lookback", "Adobe Illustrator"],
     interactivePrototype: {
-      defaultScreen: "dashboard",
+      defaultScreen: "home",
       webScreens: [
         {
-          id: "dashboard",
-          title: "Learning Dashboard",
-          description: "Personalized learning dashboard with adaptive recommendations and clear progress visualization.",
-          image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["course", "progress", "social"]
+          id: "home",
+          title: "Child Dashboard",
+          description: "Personalized learning journey with fun visual elements",
+          image: "/images/learnquest-web-home.png",
+          linkTo: ["subjects", "activity"]
         },
         {
-          id: "course",
-          title: "Course View",
-          description: "Course interface with multi-modal content delivery options for different learning preferences.",
-          image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["lesson", "dashboard"]
+          id: "subjects",
+          title: "Choose Subject",
+          description: "Browse available subjects in an engaging visual format",
+          image: "/images/learnquest-web-subjects.png",
+          linkTo: ["home", "activity"]
         },
         {
-          id: "lesson",
-          title: "Interactive Lesson",
-          description: "Engaging lesson format with interactive elements, comprehension checks, and accessibility features.",
-          image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["assessment", "course"]
+          id: "activity",
+          title: "Learning Activity",
+          description: "Interactive educational activity with games and challenges",
+          image: "/images/learnquest-web-activity.png",
+          linkTo: ["home", "subjects", "reward"]
         },
         {
-          id: "assessment",
-          title: "Knowledge Check",
-          description: "Adaptive assessment that adjusts difficulty based on learner responses with immediate feedback.",
-          image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["progress", "course"]
+          id: "reward",
+          title: "Achievement Earned",
+          description: "Celebration of completed activities and rewards",
+          image: "/images/learnquest-web-reward.png",
+          linkTo: ["activity", "home"]
         },
         {
-          id: "progress",
-          title: "Learning Progress",
-          description: "Comprehensive progress tracking with skill mastery visualization and learning analytics.",
-          image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["dashboard", "social"]
-        },
-        {
-          id: "social",
-          title: "Learning Community",
-          description: "Social learning environment with discussion forums, peer collaboration, and mentor connections.",
-          image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["dashboard", "course"]
+          id: "parent",
+          title: "Parent Dashboard",
+          description: "Progress tracking and insights for parents",
+          image: "/images/learnquest-web-parent.png",
+          linkTo: ["home"]
         }
       ],
       mobileScreens: [
         {
-          id: "m-dashboard",
-          title: "Mobile Learning Dashboard",
-          description: "Mobile-optimized dashboard with focus on current courses and quick resume functionality.",
-          image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-course", "m-progress", "m-social"]
+          id: "home",
+          title: "Home",
+          description: "Main dashboard with learning journey map",
+          image: "/images/learnquest-mobile-home.png",
+          linkTo: ["subjects", "activity"]
         },
         {
-          id: "m-course",
-          title: "Mobile Course View",
-          description: "Streamlined mobile course experience with offline capability and bite-sized content segments.",
-          image: "https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-lesson", "m-dashboard"]
+          id: "subjects",
+          title: "Subjects",
+          description: "Subject selection with progress indicators",
+          image: "/images/learnquest-mobile-subjects.png",
+          linkTo: ["home", "activity"]
         },
         {
-          id: "m-lesson",
-          title: "Mobile Lesson",
-          description: "Mobile lesson experience designed for on-the-go learning with audio options and quick bookmarking.",
-          image: "https://images.unsplash.com/photo-1602536546532-9d2c4e429168?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-assessment", "m-course"]
+          id: "activity",
+          title: "Activity",
+          description: "Interactive learning activity",
+          image: "/images/learnquest-mobile-activity.png",
+          linkTo: ["home", "subjects", "reward"]
         },
         {
-          id: "m-assessment",
-          title: "Mobile Knowledge Check",
-          description: "Touch-optimized assessment with swipe controls and quick-answer functionality.",
-          image: "https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-progress", "m-course"]
+          id: "reward",
+          title: "Reward",
+          description: "Achievement celebration screen",
+          image: "/images/learnquest-mobile-reward.png",
+          linkTo: ["activity", "home"]
         },
         {
-          id: "m-progress",
-          title: "Mobile Progress Tracking",
-          description: "Simplified progress visualization optimized for mobile screens with achievement celebrations.",
-          image: "https://images.unsplash.com/photo-1516728778615-2d590ea1855e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-dashboard", "m-social"]
-        },
-        {
-          id: "m-social",
-          title: "Mobile Learning Community",
-          description: "Mobile-optimized social learning features with push notifications for community engagement.",
-          image: "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-dashboard", "m-course"]
+          id: "parent",
+          title: "Parent View",
+          description: "Analytics and progress tracking for parents",
+          image: "/images/learnquest-mobile-parent.png",
+          linkTo: ["home"]
         }
       ]
     }
   },
   {
-    id: "project5",
-    title: "TeamSync: Enterprise Collaboration Tool",
-    focus: "Agile Collaboration Focus",
-    challenge: "Creating an enterprise collaboration tool that streamlines communication, document management, and project coordination for cross-functional teams working in agile environments.",
-    role: "Lead UX Designer embedded within an agile development team, collaborating with product owners, developers, and stakeholders.",
-    timeline: "8 months (March 2020 - October 2020)",
+    id: "teamsync",
+    title: "TeamSync - Remote Collaboration Tool",
+    focus: "UX Design & Design System Development",
+    challenge: "Create a collaboration platform that addresses the unique challenges of remote teams, focusing on asynchronous communication, time zone management, and building team cohesion without physical presence.",
+    role: "Lead UX Designer & Design System Architect",
+    timeline: "16 weeks",
     research: {
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=500",
       methods: [
-        "Stakeholder interviews across 5 departments",
-        "Shadow sessions with teams during their daily workflows",
-        "Collaborative design workshops with future users",
-        "Prototype testing in real work environments",
-        "Analysis of existing collaboration pain points"
+        "Surveys and interviews with 200+ remote workers across industries",
+        "Remote work diary studies with 25 participants",
+        "Competitive analysis of existing collaboration tools",
+        "Team workshops on pain points in distributed collaboration"
       ],
       findings: [
-        "Information silos were causing duplication of work and communication issues",
-        "Context switching between different tools decreased productivity",
-        "Document version control was a significant pain point",
-        "Remote team members felt disconnected from in-office collaboration",
-        "Decision tracking and accountability was difficult to maintain"
+        "Lack of visibility into teammates' workloads and availability was the top challenge",
+        "Context switching between multiple tools caused significant productivity loss",
+        "Time zone differences led to communication delays and misaligned expectations",
+        "Remote workers reported feeling disconnected from company culture and team dynamics"
       ]
     },
     design: {
-      images: [
-        {
-          title: "Collaborative Design Workshop",
-          src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400"
-        }
-      ],
       decisions: [
         {
-          title: "Unified workspace",
-          description: "Created a central hub integrating communication, documents, and project management"
+          title: "Unified Workspace Architecture",
+          description: "Designed a hub-and-spoke model that centralized team communication while allowing seamless integration with specialized tools for specific workflows."
         },
         {
-          title: "Contextual collaboration",
-          description: "Designed document-centric collaboration with integrated discussions and decisions"
+          title: "Time Zone Intelligent Interface",
+          description: "Created an interface that dynamically adjusted to show optimal meeting times, teammate availability, and expected response times based on global team distribution."
         },
         {
-          title: "Presence awareness",
-          description: "Implemented real-time indicators of team availability and activities"
+          title: "Comprehensive Design System",
+          description: "Developed a flexible, component-based design system that ensured consistency across features while supporting future scalability and extensibility."
         },
         {
-          title: "Knowledge capture",
-          description: "Created automatic documentation of decisions and action items from meetings"
-        }
-      ],
-      finalDesigns: [
-        {
-          title: "Team Workspace",
-          src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400"
-        },
-        {
-          title: "Mobile Collaboration",
-          src: "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
+          title: "Presence Without Surveillance",
+          description: "Implemented subtle ambient awareness features that conveyed team activity and availability without creating privacy concerns or surveillance anxiety."
         }
       ]
     },
     outcomes: [
       {
-        value: "32%",
-        label: "Reduction in meeting time"
+        value: "62%",
+        label: "reduction in time spent context switching between tools"
       },
       {
-        value: "47%",
-        label: "Decrease in context switching"
+        value: "45%",
+        label: "decrease in reported communication friction"
       },
       {
-        value: "78%",
-        label: "Teams reported improved information sharing"
+        value: "58%",
+        label: "of users reported stronger connection with remote teammates"
+      },
+      {
+        value: "27%",
+        label: "increase in asynchronous collaboration efficiency"
       }
     ],
-    tools: [
-      "Figma", "Design System", "Agile Methodologies", "Jira", 
-      "GitHub", "Usability Testing", "Collaborative Design"
-    ],
+    tools: ["Figma", "Framer", "Storybook", "Optimal Workshop"],
     interactivePrototype: {
-      defaultScreen: "workspace",
+      defaultScreen: "home",
       webScreens: [
         {
-          id: "workspace",
-          title: "Team Workspace",
-          description: "Centralized team workspace bringing together all projects, communications, and resources in one unified interface.",
-          image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["project", "documents", "communication"]
+          id: "home",
+          title: "Team Hub",
+          description: "Central dashboard with team activity and global awareness",
+          image: "/images/teamsync-web-home.png",
+          linkTo: ["projects", "messages", "presence"]
         },
         {
-          id: "project",
-          title: "Project Management",
-          description: "Agile project tracking with customizable workflows, sprint planning, and team assignments.",
-          image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["tasks", "workspace"]
+          id: "projects",
+          title: "Projects Overview",
+          description: "Visual project management with time zone indicators",
+          image: "/images/teamsync-web-projects.png",
+          linkTo: ["home", "tasks"]
         },
         {
           id: "tasks",
           title: "Task Management",
-          description: "Task detail view with integrated context, discussions, and workflow transitions.",
-          image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["project", "documents"]
+          description: "Collaborative task tracking with priority and time estimates",
+          image: "/images/teamsync-web-tasks.png",
+          linkTo: ["projects", "messages"]
         },
         {
-          id: "documents",
-          title: "Document Collaboration",
-          description: "Real-time document editing with version control, comments, and decision tracking.",
-          image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["workspace", "project"]
-        },
-        {
-          id: "communication",
+          id: "messages",
           title: "Team Communication",
-          description: "Contextual messaging linked to projects and documents with presence awareness.",
-          image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["meetings", "workspace"]
+          description: "Asynchronous and real-time communication unified",
+          image: "/images/teamsync-web-messages.png",
+          linkTo: ["home", "presence"]
         },
         {
-          id: "meetings",
-          title: "Meeting Management",
-          description: "Meeting scheduling, agendas, notes, and automatic action item tracking.",
-          image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800",
-          linkTo: ["communication", "workspace"]
+          id: "presence",
+          title: "Team Presence",
+          description: "Global team availability and time zone management",
+          image: "/images/teamsync-web-presence.png",
+          linkTo: ["home", "messages"]
         }
       ],
       mobileScreens: [
         {
-          id: "m-workspace",
-          title: "Mobile Workspace",
-          description: "Mobile team workspace with activity feeds and quick access to current projects.",
-          image: "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-project", "m-documents", "m-communication"]
+          id: "home",
+          title: "Home",
+          description: "Activity feed and team status",
+          image: "/images/teamsync-mobile-home.png",
+          linkTo: ["projects", "messages", "presence"]
         },
         {
-          id: "m-project",
-          title: "Mobile Project View",
-          description: "Mobile-optimized project tracking with touch-friendly status updates and filters.",
-          image: "https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-tasks", "m-workspace"]
+          id: "projects",
+          title: "Projects",
+          description: "Project tracking and updates",
+          image: "/images/teamsync-mobile-projects.png",
+          linkTo: ["home", "tasks"]
         },
         {
-          id: "m-tasks",
-          title: "Mobile Task Management",
-          description: "Task management with swipe actions and quick task creation for on-the-go productivity.",
-          image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-project", "m-documents"]
+          id: "tasks",
+          title: "Tasks",
+          description: "Personal and team tasks management",
+          image: "/images/teamsync-mobile-tasks.png",
+          linkTo: ["projects", "home"]
         },
         {
-          id: "m-documents",
-          title: "Mobile Document Access",
-          description: "Mobile document viewer with offline access and commenting functionality.",
-          image: "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-workspace", "m-communication"]
+          id: "messages",
+          title: "Messages",
+          description: "Communication hub with time zone awareness",
+          image: "/images/teamsync-mobile-messages.png",
+          linkTo: ["home", "presence"]
         },
         {
-          id: "m-communication",
-          title: "Mobile Communication",
-          description: "Mobile messaging with rich media sharing and push notifications.",
-          image: "https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-meetings", "m-workspace"]
-        },
-        {
-          id: "m-meetings",
-          title: "Mobile Meetings",
-          description: "Mobile meeting tools with audio call integration and quick minute taking.",
-          image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=800",
-          linkTo: ["m-communication", "m-workspace"]
+          id: "presence",
+          title: "Presence",
+          description: "Team availability across time zones",
+          image: "/images/teamsync-mobile-presence.png",
+          linkTo: ["home", "messages"]
         }
       ]
     }
