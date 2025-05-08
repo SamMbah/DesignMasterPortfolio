@@ -947,11 +947,11 @@ export default function ZenPay() {
                       <div>
                         <label className="block text-sm font-medium mb-1">Bank</label>
                         <select className="w-full border rounded-lg p-3">
-                          <option>Zenith Bank</option>
-                          <option>First Bank</option>
-                          <option>UBA</option>
-                          <option>GT Bank</option>
-                          <option>Access Bank</option>
+                          <option>Barclays</option>
+                          <option>HSBC</option>
+                          <option>Lloyds Bank</option>
+                          <option>Santander UK</option>
+                          <option>NatWest</option>
                         </select>
                       </div>
                       
@@ -1072,12 +1072,12 @@ export default function ZenPay() {
                         <div>
                           <div className="text-gray-600 text-sm mb-1">To</div>
                           <div className="font-medium">John Doe</div>
-                          <div className="text-sm text-gray-500">0123456789 - Zenith Bank</div>
+                          <div className="text-sm text-gray-500">0123456789 - Barclays</div>
                         </div>
                         
                         <div>
                           <div className="text-gray-600 text-sm mb-1">Amount</div>
-                          <div className="text-xl font-bold">£50,000.00</div>
+                          <div className="text-xl font-bold">£350.00</div>
                         </div>
                         
                         <div>
@@ -1212,7 +1212,7 @@ export default function ZenPay() {
                           <div className="text-xs text-gray-500">**** 4532</div>
                         </div>
                         <div className="flex justify-between items-center mb-4">
-                          <div className="text-2xl font-bold">£2,458,250.65</div>
+                          <div className="text-2xl font-bold">£16,458.65</div>
                           <div className="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full">Active</div>
                         </div>
                         <div className="flex space-x-2">
@@ -1232,7 +1232,7 @@ export default function ZenPay() {
                           <div className="text-xs text-gray-500">**** 7890</div>
                         </div>
                         <div className="flex justify-between items-center mb-4">
-                          <div className="text-2xl font-bold">£785,120.33</div>
+                          <div className="text-2xl font-bold">£8,520.33</div>
                           <div className="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full">Active</div>
                         </div>
                         <div className="flex space-x-2">
