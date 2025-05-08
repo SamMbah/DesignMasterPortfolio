@@ -117,7 +117,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Salary Payment</div>
                                 <div className="text-xs text-gray-500">Today, 9:45 AM</div>
                               </div>
-                              <div className="text-green-600 font-medium">+₦350,000.00</div>
+                              <div className="text-green-600 font-medium">+£2,350.00</div>
                             </div>
                           </div>
                         </div>
@@ -134,7 +134,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Rental Payment</div>
                                 <div className="text-xs text-gray-500">Yesterday, 2:30 PM</div>
                               </div>
-                              <div className="text-red-600 font-medium">-₦125,000.00</div>
+                              <div className="text-red-600 font-medium">-£825.00</div>
                             </div>
                           </div>
                         </div>
