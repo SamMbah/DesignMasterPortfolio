@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Project } from "@/data/projects";
+import { Project as OldProject } from "@/data/projects";
+import { Project as NewProject } from "@/data/newProjects";
+import InteractiveProject from "./InteractiveProject";
 
 interface ProjectCardProps {
-  project: Project;
+  project: OldProject | NewProject;
 }
+
+const isNewProject = (project: any): project is NewProject => {
+  return 'interactivePrototype' in project;
+};
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const {
@@ -47,6 +53,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <p className="text-gray-dark">{timeline}</p>
         </div>
       </div>
+      
+      {/* Interactive Prototype Section (Only for new projects) */}
+      {isNewProject(project) && (
+        <div className="mb-16">
+          <h4 className="text-xl font-semibold mb-6">Interactive Prototype</h4>
+          <InteractiveProject project={project} />
+        </div>
+      )}
       
       {/* Research Process */}
       <div className="mb-16">

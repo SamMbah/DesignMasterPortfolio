@@ -1,8 +1,12 @@
 import { useState } from "react";
-import { projectsData, Project } from "@/data/projects";
+import { Project as NewProject, projectsData as newProjectsData } from "@/data/newProjects";
+import { Project as OldProject, projectsData as oldProjectsData } from "@/data/projects";
+
+type CombinedProject = OldProject | NewProject;
 
 export const useProjects = () => {
-  const [projects] = useState<Project[]>(projectsData);
+  // Give priority to new project data with interactive prototypes
+  const [projects] = useState<CombinedProject[]>(newProjectsData);
 
   return {
     projects
