@@ -330,7 +330,7 @@ export default function ZenPay() {
                   <div className="p-4 border-t">
                     <button 
                       className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium"
-                      onClick={() => navigateTo("home")}
+                      onClick={() => navigateTo("success")}
                     >
                       Confirm Transfer
                     </button>
@@ -339,6 +339,69 @@ export default function ZenPay() {
                       onClick={() => navigateTo("transfer")}
                     >
                       Cancel
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {activeScreen === "success" && (
+              <div className="w-full h-full">
+                <div className="bg-white h-full flex flex-col">
+                  <div className="flex-1 flex flex-col items-center justify-center p-6 text-center">
+                    <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                      <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    
+                    <h1 className="text-2xl font-bold mb-2">Transaction Successful!</h1>
+                    <p className="text-gray-600 mb-6">Your money has been sent successfully.</p>
+                    
+                    <div className="w-full bg-gray-50 rounded-lg p-4 mb-6">
+                      <div className="flex justify-between items-center mb-3 pb-3 border-b">
+                        <div className="text-gray-500">Amount</div>
+                        <div className="font-bold text-xl">£50.00</div>
+                      </div>
+                      
+                      <div className="space-y-3">
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">From</div>
+                          <div className="text-right">
+                            <div>Main Account</div>
+                            <div className="text-sm text-gray-500">**** 4532</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">To</div>
+                          <div className="text-right">
+                            <div>John Doe</div>
+                            <div className="text-sm text-gray-500">Barclays</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">Date</div>
+                          <div>{new Date().toLocaleDateString('en-GB')}</div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">Reference</div>
+                          <div>Rent payment</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button 
+                      className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium mb-3"
+                      onClick={() => navigateTo("home")}
+                    >
+                      Back to Home
+                    </button>
+                    
+                    <button className="text-blue-600 font-medium">
+                      Share Receipt
                     </button>
                   </div>
                 </div>
