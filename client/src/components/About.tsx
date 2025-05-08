@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { aboutData } from "@/data/about";
-import { FaLinkedin, FaDribbble, FaBehance, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaDribbble, FaBehance, FaGithub, FaEnvelope } from "react-icons/fa";
 import SamuelProfileImage from "../assets/samuel_profile.jpg";
 
 const About = () => {
@@ -39,17 +39,17 @@ const About = () => {
                   UX Designer & Research Specialist with 6+ years of experience delivering qualitative and quantitative research that solves real-world problems.
                 </p>
                 <div className="flex space-x-3">
-                  <a href="#" className="text-primary hover:text-blue-700" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/samuel-mbah-mlengineer" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-blue-700" aria-label="LinkedIn">
                     <FaLinkedin className="text-xl" />
+                  </a>
+                  <a href="mailto:samuelmbah21@gmail.com" className="text-primary hover:text-blue-700" aria-label="Email">
+                    <FaEnvelope className="text-xl" />
                   </a>
                   <a href="#" className="text-primary hover:text-blue-700" aria-label="Dribbble">
                     <FaDribbble className="text-xl" />
                   </a>
                   <a href="#" className="text-primary hover:text-blue-700" aria-label="Behance">
                     <FaBehance className="text-xl" />
-                  </a>
-                  <a href="#" className="text-primary hover:text-blue-700" aria-label="GitHub">
-                    <FaGithub className="text-xl" />
                   </a>
                 </div>
               </CardContent>
