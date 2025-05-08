@@ -26,7 +26,7 @@ const About = () => {
               <CardContent className="p-4">
                 <div className="aspect-square mb-4 rounded-lg overflow-hidden">
                   <img 
-                    src="/images/samuel_profile.jpg" 
+                    src="/samuel_profile.jpg" 
                     alt="Samuel Mbah" 
                     className="w-full h-full object-cover" 
                   />
