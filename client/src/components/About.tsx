@@ -5,6 +5,7 @@ import { FaLinkedin, FaDribbble, FaBehance, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const { experience } = aboutData;
+  const profileImageUrl = "/samuel_profile.jpg";
 
   return (
     <section id="about" className="py-16 bg-gray-light">
@@ -24,12 +25,14 @@ const About = () => {
             {/* Profile Card */}
             <Card>
               <CardContent className="p-4">
-                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
-                  <img 
-                    src="/samuel_profile.jpg" 
-                    alt="Samuel Mbah" 
-                    className="w-full h-full object-cover" 
-                  />
+                <div 
+                  className="aspect-square mb-4 rounded-lg overflow-hidden bg-blue-100"
+                  style={{
+                    backgroundImage: `url(${profileImageUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                  }}
+                >
                 </div>
                 <h3 className="font-bold text-xl mb-2">Samuel Mbah</h3>
                 <p className="text-gray-dark mb-4">
@@ -63,6 +66,43 @@ const About = () => {
                 <p className="text-gray-dark">
                   With a background spanning e-commerce, healthcare, finance, and travel industries, I've developed expertise in translating complex requirements into intuitive interfaces that delight users and drive business results.
                 </p>
+              </CardContent>
+            </Card>
+
+            <Card className="mb-8">
+              <CardContent className="p-6">
+                <h3 className="font-bold text-lg mb-4">Education</h3>
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex justify-between items-center mb-1">
+                      <h4 className="font-semibold">MSc Artificial Intelligence and Data Science (Distinction)</h4>
+                      <span className="text-sm text-gray-dark">Jan 2023 – Jan 2024</span>
+                    </div>
+                    <p className="text-gray-dark">University of Hull, UK</p>
+                  </div>
+                  
+                  <div>
+                    <div className="flex justify-between items-center mb-1">
+                      <h4 className="font-semibold">BSc Mathematics and Economics</h4>
+                      <span className="text-sm text-gray-dark">Dec 2011 – Oct 2015</span>
+                    </div>
+                    <p className="text-gray-dark">University of Benin, Nigeria</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="mb-8">
+              <CardContent className="p-6">
+                <h3 className="font-bold text-lg mb-4">Certifications</h3>
+                <ul className="space-y-2 list-disc list-inside text-gray-dark">
+                  <li>Associate Data Analyst in SQL – DataCamp</li>
+                  <li>Microsoft DP-203: Data Engineering on Microsoft Azure (In Progress)</li>
+                  <li>Python for Data Science – Coursera</li>
+                  <li>Google UX Design Certification</li>
+                  <li>Design-Led Strategy: Design Thinking for Business & Entrepreneurship (University of Sydney- Coursera)</li>
+                  <li>Innovation Through Design (University of Sydney-Coursera)</li>
+                </ul>
               </CardContent>
             </Card>
             
