@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { FaEnvelope, FaLinkedin, FaFileDownload } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 import SamuelProfileImage from "../assets/samuel_profile.jpg";
 import HealthTrackIcon from "../assets/project-icons/healthtrack.svg";
 import EcoShopIcon from "../assets/project-icons/ecoshop.svg";
@@ -50,17 +50,6 @@ const Home = () => {
                 </Button>
               </div>
               
-              <div className="flex flex-wrap gap-4 mb-6">
-                <Button asChild variant="outline" className="flex items-center gap-2">
-                  <a 
-                    href="/samuel_mbah_resume.txt" 
-                    download="Samuel_Mbah_UX_Resume.txt"
-                  >
-                    <FaFileDownload className="mr-2" /> Download Resume
-                  </a>
-                </Button>
-              </div>
-
               <div className="flex gap-4 items-center">
                 <a 
                   href="https://www.linkedin.com/in/samuel-mbah-mlengineer" 

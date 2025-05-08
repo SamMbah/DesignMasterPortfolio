@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { aboutData } from "@/data/about";
-import { FaLinkedin, FaDribbble, FaBehance, FaGithub, FaEnvelope, FaFileDownload } from "react-icons/fa";
+import { FaLinkedin, FaDribbble, FaBehance, FaGithub, FaEnvelope } from "react-icons/fa";
 import SamuelProfileImage from "../assets/samuel_profile.jpg";
 
 const About = () => {
@@ -39,7 +38,7 @@ const About = () => {
                 <p className="text-gray-dark mb-4">
                   UX Designer & Research Specialist with 6+ years of experience delivering qualitative and quantitative research that solves real-world problems.
                 </p>
-                <div className="flex space-x-3 mb-4">
+                <div className="flex space-x-3">
                   <a href="https://www.linkedin.com/in/samuel-mbah-mlengineer" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-blue-700" aria-label="LinkedIn">
                     <FaLinkedin className="text-xl" />
                   </a>
@@ -53,16 +52,6 @@ const About = () => {
                     <FaBehance className="text-xl" />
                   </a>
                 </div>
-                
-                <Button asChild variant="outline" className="w-full">
-                  <a 
-                    href="/samuel_mbah_resume.txt" 
-                    download="Samuel_Mbah_UX_Resume.txt"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <FaFileDownload /> Download Resume
-                  </a>
-                </Button>
               </CardContent>
             </Card>
           </div>
