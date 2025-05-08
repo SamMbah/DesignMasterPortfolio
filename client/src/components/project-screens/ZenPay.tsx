@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Smartphone, Monitor } from "lucide-react";
 
 // Define screen types
-type ScreenType = "home" | "transfer" | "confirmation" | "accounts" | "history";
+type ScreenType = "home" | "transfer" | "confirmation" | "success" | "accounts" | "history";
 
 export default function ZenPay() {
   const [activeScreen, setActiveScreen] = useState<ScreenType>("home");
@@ -45,7 +45,7 @@ export default function ZenPay() {
                         <div className="text-sm opacity-80">Main Account</div>
                       </div>
                       <div className="flex justify-between items-center">
-                        <div className="text-xl font-bold">₦2,458,250.65</div>
+                        <div className="text-xl font-bold">£2,458.65</div>
                         <button className="text-xs bg-white bg-opacity-20 px-2 py-1 rounded">SHOW DETAILS</button>
                       </div>
                     </div>
