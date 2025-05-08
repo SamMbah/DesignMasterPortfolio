@@ -5,7 +5,8 @@ import { FaLinkedin, FaDribbble, FaBehance, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const { experience } = aboutData;
-  const profileImageUrl = "/samuel_profile.jpg";
+  // Use a placeholder colored background that matches Samuel's suit in the photo
+  const placeholderColor = "bg-blue-400";
 
   return (
     <section id="about" className="py-16 bg-gray-light">
@@ -26,13 +27,10 @@ const About = () => {
             <Card>
               <CardContent className="p-4">
                 <div 
-                  className="aspect-square mb-4 rounded-lg overflow-hidden bg-blue-100"
-                  style={{
-                    backgroundImage: `url(${profileImageUrl})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                  }}
+                  className={`aspect-square mb-4 rounded-lg overflow-hidden ${placeholderColor} flex items-center justify-center text-white font-bold text-5xl`}
                 >
+                  SM
+                
                 </div>
                 <h3 className="font-bold text-xl mb-2">Samuel Mbah</h3>
                 <p className="text-gray-dark mb-4">
