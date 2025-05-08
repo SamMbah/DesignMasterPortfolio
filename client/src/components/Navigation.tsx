@@ -38,6 +38,14 @@ const Navigation = () => {
           <ul className="flex space-x-8">
             <li>
               <Link 
+                href="/" 
+                className={`text-foreground hover:text-primary transition-colors ${location === '/' ? 'text-primary font-medium' : ''}`}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
                 href="/projects" 
                 className={`text-foreground hover:text-primary transition-colors ${location === '/projects' ? 'text-primary font-medium' : ''}`}
               >
@@ -87,6 +95,15 @@ const Navigation = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t animate-in slide-in-from-top">
           <ul className="container mx-auto px-4 py-3 space-y-2">
+            <li>
+              <Link 
+                href="/" 
+                className={`block py-2 text-foreground hover:text-primary transition-colors ${location === '/' ? 'text-primary font-medium' : ''}`}
+                onClick={handleLinkClick}
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <Link 
                 href="/projects" 
