@@ -5,6 +5,7 @@ import HealthTrack from "./project-screens/HealthTrack";
 import ZenPay from "./project-screens/ZenPay";
 import EcoShop from "./project-screens/EcoShop";
 import LearnQuest from "./project-screens/LearnQuest";
+import TeamSync from "./project-screens/TeamSync";
 import { Project } from "../data/newProjects";
 
 interface InteractiveProjectProps {
@@ -13,7 +14,7 @@ interface InteractiveProjectProps {
 
 export default function InteractiveProject({ project }: InteractiveProjectProps) {
   // Currently implemented projects
-  const implementedProjects = ["healthtrack", "zenpay", "ecoshop", "learnquest"];
+  const implementedProjects = ["healthtrack", "zenpay", "ecoshop", "learnquest", "teamsync"];
   
   // Check if this project has been implemented yet
   const isImplemented = implementedProjects.includes(project.id);
@@ -31,6 +32,7 @@ export default function InteractiveProject({ project }: InteractiveProjectProps)
         {project.id === "zenpay" && <ZenPay />}
         {project.id === "ecoshop" && <EcoShop />}
         {project.id === "learnquest" && <LearnQuest />}
+        {project.id === "teamsync" && <TeamSync />}
         
         {/* Display a placeholder for projects not yet implemented with interactive components */}
         {!isImplemented && (

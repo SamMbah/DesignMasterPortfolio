@@ -24,8 +24,12 @@ const About = () => {
             {/* Profile Card */}
             <Card>
               <CardContent className="p-4">
-                <div className="aspect-square bg-gray-300 rounded-lg mb-4 flex items-center justify-center text-6xl text-gray-500">
-                  SM
+                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src="/images/samuel_profile.jpg" 
+                    alt="Samuel Mbah" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Samuel Mbah</h3>
                 <p className="text-gray-dark mb-4">
