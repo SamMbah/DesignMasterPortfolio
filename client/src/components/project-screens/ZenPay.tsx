@@ -1482,7 +1482,7 @@ export default function ZenPay() {
                                 </div>
                                 <div className="text-green-600 font-medium">+£2,350.00</div>
                                 <div className="w-full mt-2 flex justify-between">
-                                  <div className="text-sm text-gray-500">Reference: SAL-MAY-2023-ZENITHBANK</div>
+                                  <div className="text-sm text-gray-500">Reference: SALARY-MAY-2023-BRITISH-GAS</div>
                                   <button className="text-blue-600 text-sm">Details</button>
                                 </div>
                               </div>
@@ -1528,7 +1528,7 @@ export default function ZenPay() {
                                   </div>
                                   <div className="text-red-600 font-medium">-£154.75</div>
                                   <div className="w-full mt-2 flex justify-between">
-                                    <div className="text-sm text-gray-500">Merchant: Shoprite Ikeja</div>
+                                    <div className="text-sm text-gray-500">Merchant: Tesco Nottingham</div>
                                     <button className="text-blue-600 text-sm">Details</button>
                                   </div>
                                 </div>
@@ -1547,9 +1547,9 @@ export default function ZenPay() {
                                     <div className="font-medium">Internet Subscription</div>
                                     <div className="text-sm text-gray-500">8:00 AM · Main Account</div>
                                   </div>
-                                  <div className="text-red-600 font-medium">-£25,000.00</div>
+                                  <div className="text-red-600 font-medium">-£45.90</div>
                                   <div className="w-full mt-2 flex justify-between">
-                                    <div className="text-sm text-gray-500">Biller: Spectranet Limited</div>
+                                    <div className="text-sm text-gray-500">Biller: BT Broadband</div>
                                     <button className="text-blue-600 text-sm">Details</button>
                                   </div>
                                 </div>
