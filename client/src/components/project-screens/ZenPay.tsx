@@ -1265,7 +1265,7 @@ export default function ZenPay() {
                         <div className="flex justify-between items-start mb-8">
                           <div>
                             <div className="text-sm opacity-80 mb-1">Current Balance</div>
-                            <div className="text-2xl font-bold">£1,450,325.50</div>
+                            <div className="text-2xl font-bold">£10,325.50</div>
                           </div>
                           <div className="text-white opacity-80">
                             <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1430,11 +1430,11 @@ export default function ZenPay() {
                       <div className="grid grid-cols-4 gap-4">
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Total Inflow</div>
-                          <div className="text-lg font-bold text-green-600">+£1,253,450.00</div>
+                          <div className="text-lg font-bold text-green-600">+£3,253.40</div>
                         </div>
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Total Outflow</div>
-                          <div className="text-lg font-bold text-red-600">-£745,230.65</div>
+                          <div className="text-lg font-bold text-red-600">-£2,450.65</div>
                         </div>
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Total Transactions</div>
@@ -1442,7 +1442,7 @@ export default function ZenPay() {
                         </div>
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Net Change</div>
-                          <div className="text-lg font-bold">+£508,219.35</div>
+                          <div className="text-lg font-bold">+£802.75</div>
                         </div>
                       </div>
                     </div>
@@ -1480,7 +1480,7 @@ export default function ZenPay() {
                                   <div className="font-medium">Salary Payment</div>
                                   <div className="text-sm text-gray-500">9:45 AM · Main Account</div>
                                 </div>
-                                <div className="text-green-600 font-medium">+£350,000.00</div>
+                                <div className="text-green-600 font-medium">+£2,350.00</div>
                                 <div className="w-full mt-2 flex justify-between">
                                   <div className="text-sm text-gray-500">Reference: SAL-MAY-2023-ZENITHBANK</div>
                                   <button className="text-blue-600 text-sm">Details</button>
@@ -1505,7 +1505,7 @@ export default function ZenPay() {
                                     <div className="font-medium">Rental Payment</div>
                                     <div className="text-sm text-gray-500">2:30 PM · Main Account</div>
                                   </div>
-                                  <div className="text-red-600 font-medium">-£125,000.00</div>
+                                  <div className="text-red-600 font-medium">-£1,250.00</div>
                                   <div className="w-full mt-2 flex justify-between">
                                     <div className="text-sm text-gray-500">Recipient: John Doe</div>
                                     <button className="text-blue-600 text-sm">Details</button>
@@ -1526,7 +1526,7 @@ export default function ZenPay() {
                                     <div className="font-medium">Supermarket</div>
                                     <div className="text-sm text-gray-500">10:15 AM · Main Account</div>
                                   </div>
-                                  <div className="text-red-600 font-medium">-£15,450.75</div>
+                                  <div className="text-red-600 font-medium">-£154.75</div>
                                   <div className="w-full mt-2 flex justify-between">
                                     <div className="text-sm text-gray-500">Merchant: Shoprite Ikeja</div>
                                     <button className="text-blue-600 text-sm">Details</button>
