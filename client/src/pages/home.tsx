@@ -53,8 +53,8 @@ const Home = () => {
               <div className="flex flex-wrap gap-4 mb-6">
                 <Button asChild variant="outline" className="flex items-center gap-2">
                   <a 
-                    href="/assets/samuel_mbah_resume.pdf" 
-                    download="Samuel_Mbah_UX_Resume.pdf"
+                    href="/samuel_mbah_resume.txt" 
+                    download="Samuel_Mbah_UX_Resume.txt"
                   >
                     <FaFileDownload className="mr-2" /> Download Resume
                   </a>

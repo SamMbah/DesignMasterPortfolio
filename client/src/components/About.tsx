@@ -56,8 +56,8 @@ const About = () => {
                 
                 <Button asChild variant="outline" className="w-full">
                   <a 
-                    href="/assets/samuel_mbah_resume.pdf" 
-                    download="Samuel_Mbah_UX_Resume.pdf"
+                    href="/samuel_mbah_resume.txt" 
+                    download="Samuel_Mbah_UX_Resume.txt"
                     className="flex items-center justify-center gap-2"
                   >
                     <FaFileDownload /> Download Resume

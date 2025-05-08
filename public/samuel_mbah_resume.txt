@@ -1,0 +1,46 @@
+SAMUEL MBAH
+UX Designer & Research Specialist
+Nottingham, UK | samuelmbah21@gmail.com | +44 7900361333
+linkedin.com/in/samuel-mbah-mlengineer
+
+EXPERIENCE
+------------------------------------
+Customer Resolution Agent - British Gas
+Oct 2024 - Present
+• Handling customer inquiries and resolving issues efficiently
+• Using data analysis to improve customer satisfaction
+
+UX Research Specialist - Zenith Bank PLC
+Jan 2020 - Jan 2024
+• Led qualitative and quantitative research for digital products
+• Improved customer outcomes by 30% through user-centered design
+• Conducted usability testing with over 500 participants
+
+Customer Data Analyst - Zenith Bank PLC
+Nov 2017 - Dec 2019
+• Analyzed customer data to identify patterns and insights
+• Created reports and dashboards for executive team
+
+EDUCATION
+------------------------------------
+MSc AI and Data Science (Distinction) - University of Hull
+Jan 2023 - Jan 2024
+
+BSc Mathematics and Economics - University of Benin
+Dec 2011 - Oct 2015
+
+CERTIFICATIONS
+------------------------------------
+• Associate Data Analyst in SQL – DataCamp
+• Microsoft DP-203: Data Engineering on Microsoft Azure (In Progress)
+• Python for Data Science – Coursera
+• Google UX Design Certification
+• Design-Led Strategy: Design Thinking for Business & Entrepreneurship (University of Sydney)
+• Innovation Through Design (University of Sydney)
+
+SKILLS
+------------------------------------
+Research: User Interviews, Surveys, Usability Testing, A/B Testing
+Design: Wireframing, Prototyping, UI Design, Interaction Design
+Tools: Figma, Adobe XD, Miro, JIRA, Notion
+Technical: SQL, Python, HTML/CSS, Data Visualization
