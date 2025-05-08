@@ -1,0 +1,160 @@
+📌 Project 3: TeamSync — Remote Collaboration Tool
+Product Summary
+TeamSync helps distributed teams plan, collaborate, and stay aligned through messaging, video huddles, tasks, and shared boards — all in one app.
+
+Target users:
+
+Remote employees
+
+Project managers
+
+Cross-functional agile teams
+
+🧩 UI Breakdown (Web + Mobile)
+✅ Both Web + Mobile versions
+✅ Interactive click-through prototype to simulate collaboration flow
+
+1️⃣ Login / Signup Screen
+Components:
+
+Email / Password fields
+
+Sign up with Google / Microsoft
+
+Forgot password link
+
+Sign in button
+
+2️⃣ Home Dashboard (after login)
+Components:
+
+Left sidebar:
+
+Home
+
+Messages
+
+Tasks
+
+Teams
+
+Meetings
+
+Settings
+
+Welcome message + daily summary ("Your day at a glance")
+
+Upcoming Meetings preview
+
+Quick actions:
+
+Start Huddle
+
+Create Task
+
+Invite team member
+
+3️⃣ Messages / Chat Screen
+Components:
+
+Team channel list (left sidebar on web / drawer on mobile)
+
+Chat area:
+
+Text messages
+
+File attachments
+
+Emojis / reactions
+
+Typing indicator
+
+Video Huddle button (Start Huddle)
+
+4️⃣ Tasks / Project Management Screen
+Components:
+
+Kanban board view (To Do, In Progress, Done)
+
+Task cards:
+
+Task title
+
+Assignee
+
+Due date
+
+Priority tag
+
+Add Task button
+
+Filter tasks by team member / status
+
+5️⃣ Team Screen
+Components:
+
+Team member list
+
+Invite new member
+
+Assign roles (Admin / Member)
+
+Team settings (Notifications, Permissions)
+
+6️⃣ Meetings Screen
+Components:
+
+Calendar view (Upcoming, Past)
+
+Schedule Meeting button
+
+Meeting details view:
+
+Participants
+
+Agenda
+
+Join Meeting link
+
+7️⃣ User Profile / Settings
+Components:
+
+Edit profile
+
+Notification preferences
+
+Theme switch (Light / Dark mode)
+
+Sign out
+
+📱 Mobile Navigation (Bottom Nav Bar)
+Home
+
+Messages
+
+Tasks
+
+Meetings
+
+Account
+
+🎨 Style Guide
+Colors: Blue, White, Light Gray (calm + productive)
+
+Fonts: Rounded Sans-Serif (Friendly + modern)
+
+Icons: Minimalist + intuitive
+
+Buttons: Rounded, hover + press states
+
+Cards and Modals: Subtle shadows, clean spacing
+
+🛠️ Tools Used
+Figma (UI Design, Prototyping, Design System)
+
+Slack + Jira (Agile team collaboration)
+
+Miro (User flows, mapping)
+
+Maze (Usability test after design phase)
+
