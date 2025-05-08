@@ -151,7 +151,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Supermarket</div>
                                 <div className="text-xs text-gray-500">Yesterday, 10:15 AM</div>
                               </div>
-                              <div className="text-red-600 font-medium">-₦15,450.75</div>
+                              <div className="text-red-600 font-medium">-£102.50</div>
                             </div>
                           </div>
                         </div>
@@ -208,7 +208,7 @@ export default function ZenPay() {
                               <div className="text-sm">Main Account</div>
                               <div className="text-xs text-gray-500">**** 4532</div>
                             </div>
-                            <div className="font-medium">₦2,458,250.65</div>
+                            <div className="font-medium">£16,458.65</div>
                           </div>
                         </div>
                       </div>
@@ -236,7 +236,7 @@ export default function ZenPay() {
                       <div>
                         <label className="block text-sm font-medium mb-1">Amount</label>
                         <div className="relative">
-                          <span className="absolute left-3 top-3 text-gray-500">₦</span>
+                          <span className="absolute left-3 top-3 text-gray-500">£</span>
                           <input 
                             type="text" 
                             placeholder="0.00" 
@@ -284,7 +284,7 @@ export default function ZenPay() {
                     <div className="bg-gray-50 rounded-lg p-4 mb-6">
                       <div className="flex justify-between items-center mb-4 border-b pb-3">
                         <div className="text-sm text-gray-500">Amount</div>
-                        <div className="text-xl font-bold">₦50,000.00</div>
+                        <div className="text-xl font-bold">£50,000.00</div>
                       </div>
                       
                       <div className="space-y-3">
@@ -306,7 +306,7 @@ export default function ZenPay() {
                         
                         <div className="flex justify-between">
                           <div className="text-sm text-gray-500">Fee</div>
-                          <div className="text-sm">₦0.00</div>
+                          <div className="text-sm">£0.00</div>
                         </div>
                         
                         <div className="flex justify-between">
@@ -428,7 +428,7 @@ export default function ZenPay() {
                           <div className="text-xs text-gray-500">**** 4532</div>
                         </div>
                         <div className="flex justify-between items-center">
-                          <div className="text-xl font-bold">₦2,458,250.65</div>
+                          <div className="text-xl font-bold">£2,458,250.65</div>
                           <button className="text-blue-600 text-sm">Details</button>
                         </div>
                       </div>
@@ -439,7 +439,7 @@ export default function ZenPay() {
                           <div className="text-xs text-gray-500">**** 7890</div>
                         </div>
                         <div className="flex justify-between items-center">
-                          <div className="text-xl font-bold">₦785,120.33</div>
+                          <div className="text-xl font-bold">£785,120.33</div>
                           <button className="text-blue-600 text-sm">Details</button>
                         </div>
                       </div>
@@ -462,7 +462,7 @@ export default function ZenPay() {
                         <div className="flex justify-between items-start mb-6">
                           <div>
                             <div className="text-xs opacity-80 mb-1">Current Balance</div>
-                            <div className="text-xl font-bold">₦1,450,325.50</div>
+                            <div className="text-xl font-bold">£1,450,325.50</div>
                           </div>
                           <div className="text-white opacity-80">
                             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -568,7 +568,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Salary Payment</div>
                                 <div className="text-xs text-gray-500">9:45 AM</div>
                               </div>
-                              <div className="text-green-600 font-medium">+₦350,000.00</div>
+                              <div className="text-green-600 font-medium">+£350,000.00</div>
                             </div>
                           </div>
                         </div>
@@ -593,7 +593,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Rental Payment</div>
                                 <div className="text-xs text-gray-500">2:30 PM</div>
                               </div>
-                              <div className="text-red-600 font-medium">-₦125,000.00</div>
+                              <div className="text-red-600 font-medium">-£125,000.00</div>
                             </div>
                           </div>
                         </div>
@@ -610,7 +610,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Supermarket</div>
                                 <div className="text-xs text-gray-500">10:15 AM</div>
                               </div>
-                              <div className="text-red-600 font-medium">-₦15,450.75</div>
+                              <div className="text-red-600 font-medium">-£15,450.75</div>
                             </div>
                           </div>
                         </div>
@@ -627,7 +627,7 @@ export default function ZenPay() {
                                 <div className="text-sm font-medium">Internet Subscription</div>
                                 <div className="text-xs text-gray-500">8:00 AM</div>
                               </div>
-                              <div className="text-red-600 font-medium">-₦25,000.00</div>
+                              <div className="text-red-600 font-medium">-£25,000.00</div>
                             </div>
                           </div>
                         </div>
@@ -686,12 +686,12 @@ export default function ZenPay() {
                   <div className="grid grid-cols-3 gap-6">
                     <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                       <div className="text-sm opacity-80 mb-1">Main Account</div>
-                      <div className="text-xl font-bold mb-3">₦2,458,250.65</div>
+                      <div className="text-xl font-bold mb-3">£2,458,250.65</div>
                       <div className="text-xs opacity-80">**** 4532</div>
                     </div>
                     <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                       <div className="text-sm opacity-80 mb-1">Savings</div>
-                      <div className="text-xl font-bold mb-3">₦785,120.33</div>
+                      <div className="text-xl font-bold mb-3">£785,120.33</div>
                       <div className="text-xs opacity-80">**** 7890</div>
                     </div>
                     <div className="bg-white bg-opacity-10 p-4 rounded-lg">
@@ -773,7 +773,7 @@ export default function ZenPay() {
                                   <div className="font-medium">Salary Payment</div>
                                   <div className="text-sm text-gray-500">Today, 9:45 AM</div>
                                 </div>
-                                <div className="text-green-600 font-medium">+₦350,000.00</div>
+                                <div className="text-green-600 font-medium">+£350,000.00</div>
                               </div>
                             </div>
                           </div>
@@ -790,7 +790,7 @@ export default function ZenPay() {
                                   <div className="font-medium">Rental Payment</div>
                                   <div className="text-sm text-gray-500">Yesterday, 2:30 PM</div>
                                 </div>
-                                <div className="text-red-600 font-medium">-₦125,000.00</div>
+                                <div className="text-red-600 font-medium">-£125,000.00</div>
                               </div>
                             </div>
                           </div>
@@ -807,7 +807,7 @@ export default function ZenPay() {
                                   <div className="font-medium">Supermarket</div>
                                   <div className="text-sm text-gray-500">Yesterday, 10:15 AM</div>
                                 </div>
-                                <div className="text-red-600 font-medium">-₦15,450.75</div>
+                                <div className="text-red-600 font-medium">-£15,450.75</div>
                               </div>
                             </div>
                           </div>
@@ -820,7 +820,7 @@ export default function ZenPay() {
                         <div className="flex justify-between items-start mb-6">
                           <div>
                             <div className="text-sm opacity-80 mb-1">Current Balance</div>
-                            <div className="text-2xl font-bold">₦1,450,325.50</div>
+                            <div className="text-2xl font-bold">£1,450,325.50</div>
                           </div>
                           <div className="text-white opacity-80">
                             <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -850,7 +850,7 @@ export default function ZenPay() {
                           <div>
                             <div className="flex justify-between items-center mb-1">
                               <div className="text-sm">Food & Dining</div>
-                              <div className="text-sm">₦145,250.00</div>
+                              <div className="text-sm">£145,250.00</div>
                             </div>
                             <div className="h-2 bg-gray-200 rounded-full">
                               <div className="h-2 bg-blue-600 rounded-full" style={{ width: '45%' }}></div>
@@ -860,7 +860,7 @@ export default function ZenPay() {
                           <div>
                             <div className="flex justify-between items-center mb-1">
                               <div className="text-sm">Housing</div>
-                              <div className="text-sm">₦250,000.00</div>
+                              <div className="text-sm">£250,000.00</div>
                             </div>
                             <div className="h-2 bg-gray-200 rounded-full">
                               <div className="h-2 bg-blue-600 rounded-full" style={{ width: '65%' }}></div>
@@ -870,7 +870,7 @@ export default function ZenPay() {
                           <div>
                             <div className="flex justify-between items-center mb-1">
                               <div className="text-sm">Transportation</div>
-                              <div className="text-sm">₦85,430.00</div>
+                              <div className="text-sm">£85,430.00</div>
                             </div>
                             <div className="h-2 bg-gray-200 rounded-full">
                               <div className="h-2 bg-blue-600 rounded-full" style={{ width: '25%' }}></div>
@@ -880,7 +880,7 @@ export default function ZenPay() {
                           <div>
                             <div className="flex justify-between items-center mb-1">
                               <div className="text-sm">Utilities</div>
-                              <div className="text-sm">₦78,150.00</div>
+                              <div className="text-sm">£78,150.00</div>
                             </div>
                             <div className="h-2 bg-gray-200 rounded-full">
                               <div className="h-2 bg-blue-600 rounded-full" style={{ width: '20%' }}></div>
@@ -918,8 +918,8 @@ export default function ZenPay() {
                       <div>
                         <label className="block text-sm font-medium mb-1">From Account</label>
                         <select className="w-full border rounded-lg p-3">
-                          <option>Main Account - ₦2,458,250.65</option>
-                          <option>Savings - ₦785,120.33</option>
+                          <option>Main Account - £2,458,250.65</option>
+                          <option>Savings - £785,120.33</option>
                           <option>USD Account - $5,250.00</option>
                         </select>
                       </div>
@@ -958,7 +958,7 @@ export default function ZenPay() {
                       <div>
                         <label className="block text-sm font-medium mb-1">Amount</label>
                         <div className="relative">
-                          <span className="absolute left-3 top-3 text-gray-500">₦</span>
+                          <span className="absolute left-3 top-3 text-gray-500">£</span>
                           <input 
                             type="text" 
                             placeholder="0.00" 
@@ -1009,18 +1009,18 @@ export default function ZenPay() {
                         </div>
                         <div className="flex justify-between">
                           <div className="text-gray-600">Amount</div>
-                          <div>₦0.00</div>
+                          <div>£0.00</div>
                         </div>
                         <div className="flex justify-between">
                           <div className="text-gray-600">Fee</div>
-                          <div>₦0.00</div>
+                          <div>£0.00</div>
                         </div>
                       </div>
                       
                       <div className="border-t border-b py-3 mb-6">
                         <div className="flex justify-between font-semibold">
                           <div>Total</div>
-                          <div>₦0.00</div>
+                          <div>£0.00</div>
                         </div>
                       </div>
                       
@@ -1077,12 +1077,12 @@ export default function ZenPay() {
                         
                         <div>
                           <div className="text-gray-600 text-sm mb-1">Amount</div>
-                          <div className="text-xl font-bold">₦50,000.00</div>
+                          <div className="text-xl font-bold">£50,000.00</div>
                         </div>
                         
                         <div>
                           <div className="text-gray-600 text-sm mb-1">Fee</div>
-                          <div className="font-medium">₦0.00</div>
+                          <div className="font-medium">£0.00</div>
                         </div>
                         
                         <div>
@@ -1212,7 +1212,7 @@ export default function ZenPay() {
                           <div className="text-xs text-gray-500">**** 4532</div>
                         </div>
                         <div className="flex justify-between items-center mb-4">
-                          <div className="text-2xl font-bold">₦2,458,250.65</div>
+                          <div className="text-2xl font-bold">£2,458,250.65</div>
                           <div className="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full">Active</div>
                         </div>
                         <div className="flex space-x-2">
@@ -1232,7 +1232,7 @@ export default function ZenPay() {
                           <div className="text-xs text-gray-500">**** 7890</div>
                         </div>
                         <div className="flex justify-between items-center mb-4">
-                          <div className="text-2xl font-bold">₦785,120.33</div>
+                          <div className="text-2xl font-bold">£785,120.33</div>
                           <div className="bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full">Active</div>
                         </div>
                         <div className="flex space-x-2">
@@ -1265,7 +1265,7 @@ export default function ZenPay() {
                         <div className="flex justify-between items-start mb-8">
                           <div>
                             <div className="text-sm opacity-80 mb-1">Current Balance</div>
-                            <div className="text-2xl font-bold">₦1,450,325.50</div>
+                            <div className="text-2xl font-bold">£1,450,325.50</div>
                           </div>
                           <div className="text-white opacity-80">
                             <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1430,11 +1430,11 @@ export default function ZenPay() {
                       <div className="grid grid-cols-4 gap-4">
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Total Inflow</div>
-                          <div className="text-lg font-bold text-green-600">+₦1,253,450.00</div>
+                          <div className="text-lg font-bold text-green-600">+£1,253,450.00</div>
                         </div>
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Total Outflow</div>
-                          <div className="text-lg font-bold text-red-600">-₦745,230.65</div>
+                          <div className="text-lg font-bold text-red-600">-£745,230.65</div>
                         </div>
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Total Transactions</div>
@@ -1442,7 +1442,7 @@ export default function ZenPay() {
                         </div>
                         <div className="bg-gray-50 p-3 rounded-lg">
                           <div className="text-sm text-gray-500 mb-1">Net Change</div>
-                          <div className="text-lg font-bold">+₦508,219.35</div>
+                          <div className="text-lg font-bold">+£508,219.35</div>
                         </div>
                       </div>
                     </div>
@@ -1480,7 +1480,7 @@ export default function ZenPay() {
                                   <div className="font-medium">Salary Payment</div>
                                   <div className="text-sm text-gray-500">9:45 AM · Main Account</div>
                                 </div>
-                                <div className="text-green-600 font-medium">+₦350,000.00</div>
+                                <div className="text-green-600 font-medium">+£350,000.00</div>
                                 <div className="w-full mt-2 flex justify-between">
                                   <div className="text-sm text-gray-500">Reference: SAL-MAY-2023-ZENITHBANK</div>
                                   <button className="text-blue-600 text-sm">Details</button>
@@ -1505,7 +1505,7 @@ export default function ZenPay() {
                                     <div className="font-medium">Rental Payment</div>
                                     <div className="text-sm text-gray-500">2:30 PM · Main Account</div>
                                   </div>
-                                  <div className="text-red-600 font-medium">-₦125,000.00</div>
+                                  <div className="text-red-600 font-medium">-£125,000.00</div>
                                   <div className="w-full mt-2 flex justify-between">
                                     <div className="text-sm text-gray-500">Recipient: John Doe</div>
                                     <button className="text-blue-600 text-sm">Details</button>
@@ -1526,7 +1526,7 @@ export default function ZenPay() {
                                     <div className="font-medium">Supermarket</div>
                                     <div className="text-sm text-gray-500">10:15 AM · Main Account</div>
                                   </div>
-                                  <div className="text-red-600 font-medium">-₦15,450.75</div>
+                                  <div className="text-red-600 font-medium">-£15,450.75</div>
                                   <div className="w-full mt-2 flex justify-between">
                                     <div className="text-sm text-gray-500">Merchant: Shoprite Ikeja</div>
                                     <button className="text-blue-600 text-sm">Details</button>
@@ -1547,7 +1547,7 @@ export default function ZenPay() {
                                     <div className="font-medium">Internet Subscription</div>
                                     <div className="text-sm text-gray-500">8:00 AM · Main Account</div>
                                   </div>
-                                  <div className="text-red-600 font-medium">-₦25,000.00</div>
+                                  <div className="text-red-600 font-medium">-£25,000.00</div>
                                   <div className="w-full mt-2 flex justify-between">
                                     <div className="text-sm text-gray-500">Biller: Spectranet Limited</div>
                                     <button className="text-blue-600 text-sm">Details</button>
