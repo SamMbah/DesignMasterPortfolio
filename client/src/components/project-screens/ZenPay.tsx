@@ -1188,6 +1188,87 @@ export default function ZenPay() {
               </div>
             )}
             
+            {activeScreen === "success" && (
+              <div className="min-h-[500px] p-6">
+                <div className="flex justify-between items-center mb-6">
+                  <h1 className="text-2xl font-bold">Transaction Successful</h1>
+                  <button
+                    className="text-gray-500 hover:text-gray-700"
+                    onClick={() => navigateTo("home")}
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+                  <div className="p-8 text-center">
+                    <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    
+                    <h2 className="text-2xl font-bold mb-2">Money Sent Successfully!</h2>
+                    <p className="text-gray-600 mb-8">Your transfer has been completed and the recipient has been notified.</p>
+                    
+                    <div className="bg-gray-50 rounded-lg p-6 max-w-md mx-auto mb-8">
+                      <div className="flex justify-between items-center mb-4 pb-4 border-b">
+                        <div className="text-gray-500 font-medium">Amount</div>
+                        <div className="font-bold text-2xl">£50.00</div>
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">From</div>
+                          <div className="text-right">
+                            <div className="font-medium">Main Account</div>
+                            <div className="text-sm text-gray-500">**** 4532</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">To</div>
+                          <div className="text-right">
+                            <div className="font-medium">John Doe</div>
+                            <div className="text-sm text-gray-500">Barclays</div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">Date</div>
+                          <div>{new Date().toLocaleDateString('en-GB')}</div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">Reference</div>
+                          <div>Rent payment</div>
+                        </div>
+                        
+                        <div className="flex justify-between items-center">
+                          <div className="text-gray-500">Transaction ID</div>
+                          <div className="text-sm text-gray-700">UK7289140637</div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex gap-4 justify-center">
+                      <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
+                        Share Receipt
+                      </button>
+                      <button 
+                        className="bg-gray-100 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-200"
+                        onClick={() => navigateTo("home")}
+                      >
+                        Back to Home
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            
             {activeScreen === "accounts" && (
               <div className="min-h-[500px] p-6">
                 <div className="flex justify-between items-center mb-6">
