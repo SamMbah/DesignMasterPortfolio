@@ -11,23 +11,23 @@ interface AboutData {
 }
 
 export const aboutData: AboutData = {
-  bio: "UX/UI Designer with 5+ years of experience creating user-centered digital experiences for diverse industries.",
-  approach: "I believe in creating meaningful digital experiences that balance business goals with user needs. My design process is deeply rooted in empathy, research, and collaboration. I work closely with cross-functional teams to ensure designs are not just beautiful, but solve real problems for users.",
+  bio: "UX Designer & Research Specialist with 6+ years of experience delivering qualitative and quantitative research that solves real-world problems.",
+  approach: "I'm an impact-driven research specialist focused on transforming complex findings into actionable insights that improve customer outcomes and influence product strategies. My approach involves working autonomously across squads, shaping research priorities, and driving evidence-based decision-making that aligns with both organizational and customer goals.",
   experience: [
     {
-      title: "Senior UX Designer at DigitalCraft",
-      period: "2021 - Present",
-      description: "Lead UX designer for enterprise clients across healthcare and fintech sectors. Responsible for research, design strategy, and team collaboration."
+      title: "UX Research Specialist at Zenith Bank PLC",
+      period: "2020 - Present",
+      description: "Lead research initiatives that have driven up to 30% improvement in customer satisfaction scores. Conduct qualitative and quantitative research, manage stakeholder engagement, and translate findings into actionable recommendations that directly impact product strategy."
     },
     {
-      title: "UX/UI Designer at TravelTech",
-      period: "2019 - 2021",
-      description: "Designed user experiences for travel booking platforms focusing on personalization and streamlined booking processes."
+      title: "Customer Data Analyst at Zenith Bank PLC",
+      period: "2018 - 2020",
+      description: "Analyzed user behavior patterns and customer journey data to identify pain points and opportunities for improvement. Delivered insights that contributed to 25% efficiency gains through redesign of key customer journeys."
     },
     {
-      title: "UI Designer at EcomSolutions",
-      period: "2017 - 2019",
-      description: "Created visual designs for e-commerce clients focusing on conversion optimization and brand consistency."
+      title: "UX Design Consultant (Freelance)",
+      period: "2017 - 2018",
+      description: "Provided user experience design and research services for clients across fintech, e-commerce, and health tech sectors, focusing on creating inclusive and accessible user interfaces."
     }
   ]
 };

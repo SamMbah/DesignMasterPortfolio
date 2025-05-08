@@ -25,11 +25,11 @@ const About = () => {
             <Card>
               <CardContent className="p-4">
                 <div className="aspect-square bg-gray-300 rounded-lg mb-4 flex items-center justify-center text-6xl text-gray-500">
-                  AM
+                  SM
                 </div>
-                <h3 className="font-bold text-xl mb-2">Alex Morgan</h3>
+                <h3 className="font-bold text-xl mb-2">Samuel Mbah</h3>
                 <p className="text-gray-dark mb-4">
-                  UX/UI Designer with 5+ years of experience creating user-centered digital experiences for diverse industries.
+                  UX Designer & Research Specialist with 6+ years of experience delivering qualitative and quantitative research that solves real-world problems.
                 </p>
                 <div className="flex space-x-3">
                   <a href="#" className="text-primary hover:text-blue-700" aria-label="LinkedIn">

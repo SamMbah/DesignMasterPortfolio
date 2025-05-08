@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Alex Morgan | UX Designer Portfolio</title>
-        <meta name="description" content="UX Designer with expertise in research, design thinking, and collaborative product development. View my portfolio showcasing work in e-commerce, healthcare, finance, and more." />
-        <meta property="og:title" content="Alex Morgan | UX Designer Portfolio" />
-        <meta property="og:description" content="UX Designer portfolio showcasing expertise in UX Research, UI Design, and collaborative product development." />
+        <title>Samuel Mbah | UX Designer & Research Specialist</title>
+        <meta name="description" content="UX Designer & Research Specialist with 6+ years of experience delivering qualitative and quantitative research that improves customer outcomes by up to 30%." />
+        <meta property="og:title" content="Samuel Mbah | UX Designer & Research Specialist" />
+        <meta property="og:description" content="Impact-driven UX research specialist showcasing expertise in user research, design thinking, and collaborative product development." />
         <meta property="og:type" content="website" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>

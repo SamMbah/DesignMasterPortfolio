@@ -72,7 +72,7 @@ const Contact = () => {
           
           <div className="flex justify-center space-x-8 mb-12">
             <a 
-              href="mailto:contact@alexmorgan.design" 
+              href="mailto:samuelmbah21@gmail.com" 
               className="flex flex-col items-center hover:opacity-80 transition-opacity"
               aria-label="Email"
             >
@@ -80,7 +80,7 @@ const Contact = () => {
               <span>Email</span>
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/samuel-mbah-mlengineer" 
               className="flex flex-col items-center hover:opacity-80 transition-opacity"
               aria-label="LinkedIn"
             >

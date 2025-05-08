@@ -12,10 +12,10 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Crafting meaningful digital experiences through user-centered design
+            Impact-driven research specialist crafting user-centered experiences
           </h1>
           <p className="text-xl text-gray-dark mb-8">
-            UX Designer with expertise in research, design thinking, and collaborative product development
+            UX Designer with 6+ years of expertise in research, design thinking, and delivering actionable insights that improve customer outcomes
           </p>
           <Button 
             size="lg" 
