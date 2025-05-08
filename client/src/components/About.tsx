@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { aboutData } from "@/data/about";
 import { FaLinkedin, FaDribbble, FaBehance, FaGithub } from "react-icons/fa";
+import SamuelProfileImage from "../assets/samuel_profile.jpg";
 
 const About = () => {
   const { experience } = aboutData;
@@ -26,11 +27,12 @@ const About = () => {
             {/* Profile Card */}
             <Card>
               <CardContent className="p-4">
-                <div 
-                  className={`aspect-square mb-4 rounded-lg overflow-hidden ${placeholderColor} flex items-center justify-center text-white font-bold text-5xl`}
-                >
-                  SM
-                
+                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src={SamuelProfileImage} 
+                    alt="Samuel Mbah" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Samuel Mbah</h3>
                 <p className="text-gray-dark mb-4">
