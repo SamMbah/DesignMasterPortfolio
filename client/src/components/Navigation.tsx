@@ -37,36 +37,36 @@ const Navigation = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             <li>
-              <a 
-                href="#projects" 
-                className="text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/projects" 
+                className={`text-foreground hover:text-primary transition-colors ${location === '/projects' ? 'text-primary font-medium' : ''}`}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#about" 
-                className="text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/about" 
+                className={`text-foreground hover:text-primary transition-colors ${location === '/about' ? 'text-primary font-medium' : ''}`}
               >
                 About Me
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#skills" 
-                className="text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/skills" 
+                className={`text-foreground hover:text-primary transition-colors ${location === '/skills' ? 'text-primary font-medium' : ''}`}
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#contact" 
-                className="text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/contact" 
+                className={`text-foreground hover:text-primary transition-colors ${location === '/contact' ? 'text-primary font-medium' : ''}`}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -88,40 +88,40 @@ const Navigation = () => {
         <div className="md:hidden bg-white border-t animate-in slide-in-from-top">
           <ul className="container mx-auto px-4 py-3 space-y-2">
             <li>
-              <a 
-                href="#projects" 
-                className="block py-2 text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/projects" 
+                className={`block py-2 text-foreground hover:text-primary transition-colors ${location === '/projects' ? 'text-primary font-medium' : ''}`}
                 onClick={handleLinkClick}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#about" 
-                className="block py-2 text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/about" 
+                className={`block py-2 text-foreground hover:text-primary transition-colors ${location === '/about' ? 'text-primary font-medium' : ''}`}
                 onClick={handleLinkClick}
               >
                 About Me
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#skills" 
-                className="block py-2 text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/skills" 
+                className={`block py-2 text-foreground hover:text-primary transition-colors ${location === '/skills' ? 'text-primary font-medium' : ''}`}
                 onClick={handleLinkClick}
               >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href="#contact" 
-                className="block py-2 text-foreground hover:text-primary transition-colors"
+              <Link 
+                href="/contact" 
+                className={`block py-2 text-foreground hover:text-primary transition-colors ${location === '/contact' ? 'text-primary font-medium' : ''}`}
                 onClick={handleLinkClick}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
