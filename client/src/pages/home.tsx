@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 import SamuelProfileImage from "../assets/samuel_profile.jpg";
+import HealthTrackIcon from "../assets/project-icons/healthtrack.svg";
+import EcoShopIcon from "../assets/project-icons/ecoshop.svg";
+import TeamSyncIcon from "../assets/project-icons/teamsync.svg";
 
 const Home = () => {
   return (
@@ -104,9 +107,14 @@ const Home = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="h-48 bg-blue-50 overflow-hidden">
-                  <div className="p-4 flex items-center justify-center h-full">
-                    <h3 className="text-xl font-bold text-primary">HealthTrack</h3>
+                <div className="h-48 overflow-hidden relative">
+                  <img 
+                    src={HealthTrackIcon} 
+                    alt="HealthTrack" 
+                    className="w-full h-full object-cover absolute top-0 left-0"
+                  />
+                  <div className="p-4 flex items-center justify-center h-full relative z-10">
+                    <h3 className="text-xl font-bold text-primary bg-white/80 px-4 py-2 rounded-full">HealthTrack</h3>
                   </div>
                 </div>
                 <div className="p-5">
@@ -124,9 +132,14 @@ const Home = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="h-48 bg-green-50 overflow-hidden">
-                  <div className="p-4 flex items-center justify-center h-full">
-                    <h3 className="text-xl font-bold text-green-600">EcoShop</h3>
+                <div className="h-48 overflow-hidden relative">
+                  <img 
+                    src={EcoShopIcon} 
+                    alt="EcoShop" 
+                    className="w-full h-full object-cover absolute top-0 left-0"
+                  />
+                  <div className="p-4 flex items-center justify-center h-full relative z-10">
+                    <h3 className="text-xl font-bold text-green-600 bg-white/80 px-4 py-2 rounded-full">EcoShop</h3>
                   </div>
                 </div>
                 <div className="p-5">
@@ -144,9 +157,14 @@ const Home = () => {
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="h-48 bg-purple-50 overflow-hidden">
-                  <div className="p-4 flex items-center justify-center h-full">
-                    <h3 className="text-xl font-bold text-purple-600">TeamSync</h3>
+                <div className="h-48 overflow-hidden relative">
+                  <img 
+                    src={TeamSyncIcon} 
+                    alt="TeamSync" 
+                    className="w-full h-full object-cover absolute top-0 left-0"
+                  />
+                  <div className="p-4 flex items-center justify-center h-full relative z-10">
+                    <h3 className="text-xl font-bold text-purple-600 bg-white/80 px-4 py-2 rounded-full">TeamSync</h3>
                   </div>
                 </div>
                 <div className="p-5">

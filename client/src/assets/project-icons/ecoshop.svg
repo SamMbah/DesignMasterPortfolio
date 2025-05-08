@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background pattern -->
+  <rect width="300" height="200" fill="#ECFDF5" />
+  <circle cx="40" cy="40" r="25" fill="#A7F3D0" opacity="0.7" />
+  <circle cx="260" cy="150" r="30" fill="#A7F3D0" opacity="0.7" />
+  <circle cx="80" cy="180" r="20" fill="#A7F3D0" opacity="0.7" />
+  <circle cx="230" cy="35" r="20" fill="#A7F3D0" opacity="0.7" />
+  
+  <!-- Leaf icon -->
+  <path d="M150 60C190 60 190 140 150 140C150 100 110 100 110 140C110 180 190 180 190 140" 
+        stroke="#10B981" stroke-width="6" fill="none" stroke-linecap="round" />
+  
+  <!-- Shopping bag outline -->
+  <path d="M120 100H180V150C180 155.523 175.523 160 170 160H130C124.477 160 120 155.523 120 150V100Z" 
+        stroke="#10B981" stroke-width="3" fill="none" />
+  <path d="M135 100V90C135 85 140 80 150 80C160 80 165 85 165 90V100" 
+        stroke="#10B981" stroke-width="3" fill="none" />
+</svg>
