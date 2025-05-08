@@ -27,11 +27,11 @@ const About = () => {
             {/* Profile Card */}
             <Card>
               <CardContent className="p-4">
-                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                <div className="mb-4 rounded-lg overflow-hidden" style={{ height: '340px' }}>
                   <img 
                     src={SamuelProfileImage} 
                     alt="Samuel Mbah" 
-                    className="w-full h-full object-cover" 
+                    className="w-full h-full object-contain" 
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-2">Samuel Mbah</h3>
