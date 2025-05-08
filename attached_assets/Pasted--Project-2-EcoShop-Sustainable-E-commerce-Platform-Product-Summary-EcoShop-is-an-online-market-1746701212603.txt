@@ -1,0 +1,118 @@
+📦 Project 2: EcoShop — Sustainable E-commerce Platform
+Product Summary:
+EcoShop is an online marketplace dedicated to selling sustainable, eco-friendly products like reusable goods, eco fashion, natural beauty products, and green gadgets.
+
+🧩 UI Breakdown (Screen-by-Screen)
+✅ Both Web and Mobile Versions will be designed.
+✅ Clickable interactive prototype will simulate a real shopping experience.
+
+1. Landing Page (Homepage)
+Components:
+
+Hero section: Banner with CTA (Shop Sustainable Today)
+
+Featured Categories: e.g., Eco Fashion, Zero Waste, Eco Tech
+
+Best Sellers carousel
+
+Mission statement: "Shop consciously, live sustainably"
+
+Login/Signup Button (Top right)
+
+Navigation Menu: Home | Categories | About | Contact Us | Cart
+
+2. Product Listing Page
+Components:
+
+Category Filters (by Category, Material, Price, Sustainability Level)
+
+Sort Options: (Best Match, New Arrivals, Price Low to High)
+
+Product Cards:
+
+Product Image
+
+Product Title
+
+Price
+
+Eco-Rating Badge (Green, Silver, Gold tiers)
+
+3. Product Detail Page
+Components:
+
+Product Image Gallery (Carousel)
+
+Product Description (with focus on eco-benefits)
+
+Specifications (Materials, Carbon Offset, etc.)
+
+Add to Cart Button
+
+Eco Impact Highlight (e.g., "By purchasing, you saved 5kg CO2")
+
+4. Cart Page
+Components:
+
+List of Selected Items
+
+Quantity Adjuster
+
+Price Summary
+
+Eco Savings Summary
+
+"Proceed to Checkout" Button
+
+5. Checkout Page
+Components:
+
+Shipping Address Form
+
+Payment Method Selection
+
+Order Summary
+
+Confirm Purchase Button
+
+6. User Profile / Account Page
+Components:
+
+Order History
+
+Eco Impact Report (how much CO2 saved, trees planted, etc.)
+
+Edit Profile
+
+Wishlist
+
+7. Mobile Navigation (Bottom Nav Bar)
+Home
+
+Categories
+
+Cart
+
+Profile
+
+🎨 Style Guide
+Colors: Green tones (nature), White (clean), Dark Green (accent)
+
+Fonts: Modern Sans-Serif (easy readability)
+
+Iconography: Minimalist eco-friendly icons
+
+Buttons: Rounded corners, hover/press states
+
+Cards: Shadowed cards for products
+
+🛠️ Tools
+Figma (UI Design, Components, Prototyping)
+
+Miro (User Flow Diagrams)
+
+Maze (Usability Testing later on)
+
+🚀 Next Action Plan
+After confirming you like this UI Breakdown for EcoShop,
+👉 I will move to actually design the UI screens + set up the interactive clickable prototype (Web + Mobile).
