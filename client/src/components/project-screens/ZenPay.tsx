@@ -1202,6 +1202,35 @@ export default function ZenPay() {
                   </button>
                 </div>
                 
+                <div className="mb-6">
+                  <div className="flex justify-between items-center">
+                    <div className="relative w-64">
+                      <input 
+                        type="text" 
+                        placeholder="Search accounts..." 
+                        className="w-full border rounded-lg p-2 pl-8"
+                      />
+                      <svg className="absolute left-2 top-2.5 w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
+                    </div>
+                    <div className="flex space-x-2">
+                      <button className="flex items-center bg-blue-600 text-white px-3 py-2 rounded-lg text-sm">
+                        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        Add Individual Account
+                      </button>
+                      <button className="flex items-center bg-blue-100 text-blue-700 px-3 py-2 rounded-lg text-sm">
+                        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                        Add Business Account
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                   <div>
                     <h2 className="text-lg font-semibold mb-4">Bank Accounts</h2>
