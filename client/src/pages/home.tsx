@@ -14,16 +14,16 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Samuel Mbah | UX Designer & Research Specialist</title>
-        <meta name="description" content="UX Designer & Research Specialist with 6+ years of experience delivering qualitative and quantitative research that improves customer outcomes by up to 30%." />
-        <meta property="og:title" content="Samuel Mbah | UX Designer & Research Specialist" />
-        <meta property="og:description" content="Impact-driven UX research specialist showcasing expertise in user research, design thinking, and collaborative product development." />
+        <title>Samuel Mbah | UX Designer | UX Researcher | ML Engineer | AI Developer</title>
+        <meta name="description" content="Multi-disciplinary professional specializing in UX design, user research, machine learning, and AI development. Creating innovative solutions that combine exceptional user experiences with advanced data science." />
+        <meta property="og:title" content="Samuel Mbah | UX Designer | UX Researcher | ML Engineer | AI Developer" />
+        <meta property="og:description" content="Impact-driven professional showcasing expertise in user research, design thinking, machine learning, and artificial intelligence development." />
         <meta property="og:type" content="website" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Helmet>
       <Navigation />
       <main>
-        <section className="py-16 md:py-20 lg:py-32 bg-white relative overflow-hidden">
+        <section className="pt-32 pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-32 bg-white relative overflow-hidden">
           <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
             {/* Left Column: Text Content */}
             <motion.div
@@ -34,11 +34,12 @@ const Home = () => {
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 text-gray-900">
                 <span className="text-primary block">Hello, I'm Samuel</span>
-                <span>UX Designer & <br />Research Specialist</span>
+                <span>UX Designer & Researcher</span>
+                <span className="block text-3xl md:text-4xl lg:text-5xl mt-1">ML Engineer & AI Developer</span>
               </h1>
               
               <p className="text-lg md:text-xl text-gray-dark mb-8 max-w-lg">
-                I create meaningful digital experiences that balance business goals with user needs through research-driven design thinking.
+                I create meaningful digital experiences and intelligent solutions that combine user-centered design with advanced machine learning and AI capabilities.
               </p>
               
               <div className="flex flex-wrap gap-4 mb-8">
@@ -181,6 +182,37 @@ const Home = () => {
               <Button asChild size="lg" variant="outline">
                 <Link href="/projects">View All Projects</Link>
               </Button>
+            </div>
+          </div>
+          
+          {/* Data Science Portfolio Banner */}
+          <div className="container mx-auto px-4 mt-24">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg shadow-lg p-8 text-white">
+              <div className="flex flex-col md:flex-row items-center justify-between">
+                <div className="mb-6 md:mb-0 md:mr-8">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3">Data Science Portfolio</h2>
+                  <p className="text-blue-100 mb-4">
+                    Explore my machine learning projects, predictive models, and data-driven solutions.
+                  </p>
+                  <Button asChild className="bg-white text-blue-600 hover:bg-blue-50">
+                    <Link href="/data-science" className="flex items-center gap-2">
+                      <span>View Data Science Work</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </Link>
+                  </Button>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M12 8v2"/><path d="M12 14v2"/><path d="M8 12H6"/><path d="M18 12h-2"/></svg>
+                  </div>
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 rounded-full flex items-center justify-center mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                  </div>
+                  <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M11 18H8a2 2 0 0 1-2-2V9"/></svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -10,6 +10,7 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
+import DataScience from "@/components/DataScience";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -50,6 +51,13 @@ function Router() {
         {() => (
           <PageWrapper>
             <Contact />
+          </PageWrapper>
+        )}
+      </Route>
+      <Route path="/data-science">
+        {() => (
+          <PageWrapper>
+            <DataScience />
           </PageWrapper>
         )}
       </Route>

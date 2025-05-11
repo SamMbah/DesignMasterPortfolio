@@ -16,7 +16,7 @@ export const aboutData: AboutData = {
   experience: [
     {
       title: "Customer Resolution Agent at British Gas",
-      period: "Oct 2024 - Present",
+      period: "Oct 2024",
       description: "Providing exceptional customer service and resolution support, applying user experience principles to improve customer satisfaction and streamline resolution processes."
     },
     {
